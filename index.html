@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Лига креаторов ChatPlace — мы платим за просмотры ваших Reels</title>
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="%23261930"/><path fill="%23BEFF53" d="M18 4l-8 14h5l-3 10 10-15h-6z"/></svg>'>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Лига креаторов ChatPlace: снимайте ролики о ChatPlace и Virale — получайте от $0.55 до $1.20 за 1000 просмотров. Призовой фонд $3 000 в месяц, призы каждую неделю и партнёрские 20–30%.">
+<meta property="og:title" content="Лига креаторов ChatPlace — мы платим за просмотры ваших Reels">
+<meta property="og:description" content="От $0.55 до $1.20 за 1000 просмотров. Призы каждую неделю и партнёрская программа.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="preconnect" href="https://i.ytimg.com">
+<link rel="stylesheet" href="vendor/tabler-icons.min.css">
+<style>
+@font-face{font-family:'Pragmatica Ext';src:url('fonts/PragmaticaExtended-Black.BV1DCDgh.ttf') format('truetype');font-weight:800;font-display:swap}
+@font-face{font-family:'Pragmatica Ext';src:url('fonts/PragmaticaExtended-Bold.Dg2r67bo.ttf') format('truetype');font-weight:600;font-display:swap}
+@font-face{font-family:'Roboto L';src:url('fonts/Roboto-Regular.ia0dPpEo.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:'Roboto L';src:url('fonts/Roboto-Medium.BJbjO3wX.ttf') format('truetype');font-weight:500;font-display:swap}
+@font-face{font-family:'Roboto L';src:url('fonts/Roboto-Bold.CM98DFac.ttf') format('truetype');font-weight:700;font-display:swap}
+:root{
+  --bg:#fff;--card:#f6f5f8;--line:#ecebed;--line2:#cdcbd3;
+  --tx:#0c0c0c;--tx2:#4e4d57;--tx3:#86848d;
+  --dtx2:#cdc7d6;--dtx3:#9a92a8;
+  --lime:#BEFF53;--lime2:#ceff7e;--limeD:#3f7a08;
+  --deep:#261930;--lav:#B6A4FF;--blue:#008ce1;--metaB:#0082FB;--ig:#e3248b;--pink:#EF66E1;
+  --yellow:#ffff5a;
+  --dark:#0c0c0c;
+  --e:cubic-bezier(.22,.9,.27,1);
+  --head:'Pragmatica Ext',-apple-system,sans-serif;
+  --body:'Roboto L',Roboto,-apple-system,sans-serif;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:var(--body);line-height:1.5;overflow-x:clip;overflow-anchor:none}
+a{color:inherit;text-decoration:none}
+button{font-family:var(--body);cursor:pointer;border:none}
+svg{display:block}
+::selection{background:var(--lime);color:var(--dark)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--deep);outline-offset:3px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+section{padding:92px 0}
+h1,h2,h3{font-family:var(--head);font-weight:800;margin:0}
+h1{font-size:clamp(38px,5vw,66px);line-height:1.02;letter-spacing:-2px}
+h2{font-size:clamp(28px,3.4vw,46px);line-height:1.06;letter-spacing:-1.2px;margin-bottom:18px;text-wrap:balance}
+h3,.hero-card .hsub,.sub{text-wrap:balance}
+.sub{font-size:18px;color:var(--tx2);line-height:1.55;margin:0 auto 44px;max-width:660px}
+.center{text-align:center}
+.kick{font-family:var(--head);font-weight:600;font-size:12px;letter-spacing:2.2px;text-transform:uppercase;color:var(--tx3);display:inline-flex;align-items:center;gap:9px;margin-bottom:16px}
+.kick .sp{width:7px;height:7px;border-radius:50%;background:var(--ig)}
+.lvnum,.ea{font-variant-numeric:tabular-nums}
+.pat{position:absolute;left:0;right:0;bottom:0;height:clamp(70px,9vw,130px);z-index:0;pointer-events:none;line-height:0}
+.pat svg{width:100%;height:100%}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;border-radius:150px;height:60px;padding:0 10px 0 32px;font-family:var(--head);font-weight:600;font-size:15.5px;letter-spacing:-.2px;transition:transform .25s var(--e),background .2s,box-shadow .3s var(--e);white-space:nowrap}
+.btn:active{transform:scale(.97)}
+.btn .arr{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:19px;flex-shrink:0;transition:transform .3s var(--e)}
+.btn:hover .arr{transform:translateX(2px) rotate(-45deg)}
+.btn-lm{background:var(--lime);color:var(--dark)}
+.btn-lm .arr{background:var(--dark);color:var(--lime)}
+.btn-lm:hover{transform:translateY(-2px);background:var(--lime2);box-shadow:0 12px 42px rgba(190,255,83,.35)}
+.btn-dark{background:var(--dark);color:#fff}
+.btn-dark .arr{background:#fff;color:var(--dark)}
+.btn-dark:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.btn-sm{height:48px;padding:0 8px 0 22px;font-size:13.5px}
+.btn-sm .arr{width:34px;height:34px;font-size:16px}
+
+/* nav */
+#nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.82);backdrop-filter:blur(22px) saturate(160%);-webkit-backdrop-filter:blur(22px) saturate(160%);border-bottom:1px solid var(--line);transition:background .3s}
+#nav.scrolled{background:rgba(255,255,255,.95)}
+#nav .wrap{display:flex;align-items:center;gap:28px;height:72px}
+.logo{display:flex;align-items:center;gap:11px}
+.logo img{height:18px;display:block}
+.logo .lg-tag{font-family:var(--head);font-weight:600;font-size:11px;letter-spacing:1.4px;color:var(--deep);background:var(--lime);border-radius:999px;padding:4px 10px}
+.navlinks{display:flex;gap:24px;margin-left:10px}
+.navlinks a{font-size:14.5px;color:var(--tx2);transition:color .15s;white-space:nowrap}
+.navlinks a:hover{color:var(--tx)}
+.navsp{flex:1}
+.navburger{display:none;width:42px;height:42px;border-radius:12px;background:var(--card);border:1px solid var(--line2);color:var(--tx);align-items:center;justify-content:center;font-size:20px}
+.navmenu{display:none}
+
+/* promo */
+.promo{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--lime);color:var(--dark);font-size:13.5px;font-weight:500;padding:10px 16px;text-align:center}
+.promo .pch{background:var(--dark);color:var(--lime);border-radius:999px;padding:3px 12px;font-family:var(--head);font-weight:600;font-size:11.5px;letter-spacing:.3px;flex-shrink:0}
+.promo b{font-weight:700}
+
+/* ============ HERO ============ */
+#hero{padding:18px 16px 0}
+.hero-card{position:relative;background:var(--deep);border-radius:54px;text-align:center;padding:clamp(56px,7vw,92px) 24px 0;overflow:hidden;max-width:1408px;margin:0 auto}
+.hero-card .inner{position:relative;z-index:2;max-width:880px;margin:0 auto}
+.hbadge{display:inline-flex;align-items:center;gap:7px;padding:7px 14px;border-radius:120px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);color:#fff;font-size:12.5px;font-weight:500;margin-bottom:24px}
+.hbadge i{font-size:15px;color:var(--lime)}
+.hero-card h1{color:#fff}
+.hero-card .hsub{font-size:clamp(16px,1.6vw,19px);color:var(--dtx2);line-height:1.55;margin:22px auto 34px;max-width:660px}
+.hero-card .hsub b{color:#fff;font-weight:700}
+.hero-video{position:relative;z-index:2;max-width:880px;margin:48px auto 0;background:#0c0c0c;border-radius:28px 28px 0 0;overflow:hidden;aspect-ratio:16/9;cursor:pointer;box-shadow:0 -30px 90px rgba(0,0,0,.4)}
+.hero-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.hv-poster{position:absolute;inset:0;background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;transition:opacity .3s}
+.hv-poster::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.14),transparent 30%,transparent 55%,rgba(0,0,0,.62))}
+.hero-video.playing .hv-poster{opacity:0;pointer-events:none}
+.hv-play{position:relative;z-index:2;width:92px;height:92px;border-radius:50%;background:var(--lime);color:var(--dark);display:flex;align-items:center;justify-content:center;font-size:38px;box-shadow:0 16px 60px rgba(0,0,0,.45);transition:transform .3s var(--e)}
+.hero-video:hover .hv-play{transform:scale(1.08)}
+.hv-cap{position:absolute;left:22px;bottom:18px;z-index:2;text-align:left}
+.hv-cap .nm{display:block;font-family:var(--head);font-weight:600;font-size:16px;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+.hv-cap .ro{font-size:13px;color:#e6e6e6;margin-top:2px;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.hv-badge{position:absolute;top:16px;left:20px;z-index:2;display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--dark);background:var(--lime);padding:6px 13px;border-radius:100px}
+
+/* ============ live — как карточка в ЛК ============ */
+#live{padding:84px 0}
+.lkcard{max-width:880px;margin:0 auto;background:#141416;border-radius:24px;padding:26px 28px;text-align:left;box-shadow:0 30px 80px rgba(38,25,48,.18)}
+.lk-top{display:flex;align-items:center;gap:10px;margin-bottom:18px;flex-wrap:wrap}
+.lk-top .t{font-family:var(--head);font-weight:600;font-size:15px;color:#fff;margin-right:auto}
+.lk-live{display:inline-flex;align-items:center;gap:7px;font-size:12px;color:#9a92a8}
+.livedot{width:8px;height:8px;border-radius:50%;background:var(--lime);animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.lk-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.lk-tile{background:#1d1d20;border-radius:16px;padding:20px 22px}
+.lk-tile .lbl{font-size:13px;color:#9a92a8;margin-bottom:10px}
+.lvnum{font-family:var(--head);font-weight:800;font-size:clamp(28px,4vw,44px);letter-spacing:-1.5px;line-height:1;color:#fff}
+.lvnum .c{color:var(--lime)}
+.lk-tile .sublbl{font-size:12.5px;color:#9a92a8;margin-top:8px}
+.lvnum.bump{animation:lbump .4s cubic-bezier(.22,1.4,.4,1)}
+@keyframes lbump{40%{transform:scale(1.02)}100%{transform:scale(1)}}
+
+/* ============ products ============ */
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;text-align:left}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:32px;display:flex;flex-direction:column}
+.pcard .ph{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.pcard .ph .ic{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px}
+.pcard.cp .ph .ic{background:rgba(0,140,225,.1);color:var(--blue)}
+.pcard .ph h3{font-size:22px;letter-spacing:-.5px}
+.pcard .ph .tagl{font-size:12.5px;color:var(--tx3);margin-top:3px}
+.pcard ul{list-style:none;margin:0 0 18px;padding:0}
+.pcard ul li{display:flex;gap:10px;font-size:14.5px;color:var(--tx2);line-height:1.45;padding:6px 0}
+.pcard ul li i{color:var(--blue);font-size:17px;flex-shrink:0;margin-top:2px}
+.pcard .stat{font-family:var(--head);font-weight:800;font-size:15px;margin-bottom:18px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.pcard .stat span.gray{color:var(--tx3);font-family:var(--body);font-weight:400;font-size:13px}
+.meta-chip{display:inline-flex;align-items:center;gap:6px;background:var(--metaB);color:#fff;border-radius:999px;padding:6px 13px;font-size:12px;font-weight:700;font-family:var(--body);white-space:nowrap;line-height:1}
+.meta-chip i{font-size:14px}
+.pcard.vr{background:#0c0c0c;border-color:#0c0c0c;color:#fff}
+.pcard.vr .ph .ic{background:rgba(255,255,90,.12);color:var(--yellow)}
+.pcard.vr ul li{color:#c4c2cb}
+.pcard.vr ul li i{color:var(--yellow)}
+.pcard.vr .stat span.gray{color:#8b8a94}
+.pcard{min-width:0}
+.vgal{position:relative;margin-top:auto;min-width:0}
+.vrow{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:4px;scrollbar-width:none;-webkit-overflow-scrolling:touch;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 44px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 44px),transparent)}
+.vrow.end{-webkit-mask-image:none;mask-image:none}
+.vrow::-webkit-scrollbar{display:none}
+.vreel{position:relative;flex:0 0 150px;aspect-ratio:9/16;border-radius:14px;overflow:hidden;background:#101014;cursor:pointer;scroll-snap-align:start}
+.vreel video{width:100%;height:100%;object-fit:cover;display:block}
+.vreel .snd{position:absolute;right:8px;bottom:8px;z-index:2;width:30px;height:30px;border-radius:50%;background:rgba(0,0,0,.55);backdrop-filter:blur(6px);color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;border:1px solid rgba(255,255,255,.2);pointer-events:none}
+.vreel .tagv{position:absolute;left:8px;top:8px;z-index:2;font-size:9.5px;font-weight:700;color:var(--dark);background:var(--lime);padding:3px 7px;border-radius:100px}
+.vnav{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;background:#fff;border:1px solid var(--line2);color:var(--tx);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:3;box-shadow:0 6px 18px rgba(38,25,48,.18);font-size:18px;transition:opacity .2s}
+.vnav.prev{left:-14px}.vnav.next{right:-14px}
+.vnav.hide{opacity:0;pointer-events:none}
+.pcard.vr .vnav{background:#1c1c1f;border-color:#3a3a40;color:#fff}
+@media(hover:none){.vnav{display:none}}
+.vnote{font-size:12px;color:var(--tx3);margin-top:10px}
+.pcard.vr .vnote{color:#8b8a94}
+
+/* ============ how ============ */
+.how-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:52px;align-items:center;margin-top:34px}
+.shots{display:flex;flex-direction:column;gap:14px}
+.shotc{background:#141416;border-radius:18px;padding:12px;box-shadow:0 22px 60px rgba(38,25,48,.18);text-align:left}
+.shotc img{width:auto;max-width:100%;display:block;border-radius:10px;margin:0 auto}
+.shotc .cap{font-size:12.5px;color:#9a92a8;padding:10px 6px 2px}
+.shotc .cap b{color:#fff;font-weight:600}
+.hsteps{display:flex;flex-direction:column;gap:0;text-align:left}
+.hstep{display:flex;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}
+.hstep:last-child{border-bottom:none}
+.hstep .n{width:44px;height:44px;border-radius:50%;background:var(--lime);color:var(--dark);font-family:var(--head);font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.hstep h3{font-size:18px;letter-spacing:-.4px;margin-bottom:7px}
+.hstep p{font-size:14.5px;color:var(--tx2);line-height:1.55;margin:0;max-width:460px}
+.hstep p b{color:var(--tx);font-weight:700}
+
+/* ============ league ============ */
+#league{background:var(--card)}
+.lgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px;text-align:left}
+.lcard{background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:0 18px 55px rgba(38,25,48,.06)}
+.lcard .lc-t{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:6px}
+.lcard .lc-t h3{font-size:19px;letter-spacing:-.4px}
+.lcard .lc-t .tag{font-size:12px;color:var(--tx3)}
+.lcard .lc-sub{font-size:12.5px;color:var(--tx3);margin-bottom:16px}
+.lb-list .lr{display:grid;grid-template-columns:30px 1fr auto;gap:12px;align-items:center;padding:10px 12px;border-radius:14px}
+.lb-list .lr .tx{min-width:0}
+.lb-list .lr .sb{font-size:11.5px;color:var(--tx3);line-height:1.35;margin-top:1px}
+.lb-list .lr .sb b{color:var(--tx2);font-weight:600}
+.lb-list .lr .sb .vv::before{content:' · '}
+.howrank{display:grid;grid-template-columns:auto 1fr 1fr 1fr;gap:18px;align-items:center;text-align:left}
+.howrank .hr-t{font-size:17px;letter-spacing:-.4px;max-width:150px}
+.howrank .hr-t span{display:block;font-size:12px;color:var(--tx3);font-family:var(--body);font-weight:400;letter-spacing:0;margin-top:4px}
+.howrank .hs{display:flex;gap:12px;align-items:flex-start;font-size:13.5px;line-height:1.5;color:var(--tx2)}
+.howrank .hs .n{width:28px;height:28px;border-radius:50%;background:var(--card);border:1px solid var(--line);font-family:var(--head);font-weight:800;font-size:12.5px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--tx)}
+.howrank .hs b{color:var(--tx)}
+.lb-list .lr+.lr{margin-top:4px}
+.lb-list .lr .rk{font-family:var(--head);font-weight:800;font-size:15px;color:var(--tx3);text-align:center}
+.lb-list .lr .rk.m1{color:#d9a514}.lb-list .lr .rk.m2{color:#8f959d}.lb-list .lr .rk.m3{color:#b87333}
+.lb-list .lr .who{display:flex;align-items:center;gap:11px;min-width:0}
+.lb-list .lr .av{width:36px;height:36px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:var(--deep)}
+.lb-list .lr .nm{font-weight:600;font-size:14.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lb-list .lr .nm i{font-size:12px;color:var(--tx3)}
+.lb-list .lr .vw{font-size:13px;color:var(--tx3);white-space:nowrap}
+.lb-list .lr .ea{font-family:var(--head);font-weight:800;font-size:15.5px;color:var(--limeD);white-space:nowrap}
+.lc-note{font-size:12px;color:var(--tx3);margin-top:14px;line-height:1.55}
+.lc-note b{color:var(--tx2)}
+.miles{margin-top:0}
+.miles h4{font-family:var(--head);font-weight:600;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;color:var(--tx3);margin:0 0 10px}
+.mile{display:flex;align-items:center;gap:14px;padding:10px 0;border-bottom:1px solid var(--line)}
+.mile:last-child{border-bottom:none}
+.mile .ic{width:38px;height:38px;border-radius:12px;background:var(--card);display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--deep);flex-shrink:0}
+.mile .tx{flex:1;min-width:0}
+.mile .tx .t1{font-weight:700;font-size:14px}
+.mile .tx .t2{font-size:12px;color:var(--tx3)}
+.mile .th{font-family:var(--head);font-weight:800;font-size:14.5px;color:var(--tx2);white-space:nowrap}
+
+/* ============ lifespan — lavender ============ */
+#lifespan{padding:20px 16px}
+.life-card{position:relative;background:var(--lav);border-radius:54px;color:var(--dark);text-align:center;padding:clamp(56px,6vw,80px) 24px;max-width:1408px;margin:0 auto;overflow:hidden}
+.life-card h2{color:var(--dark)}
+.life-card .x{font-family:var(--head);font-weight:800;font-size:clamp(54px,8.5vw,104px);letter-spacing:-3px;line-height:1;color:var(--deep);margin-top:14px}
+.life-card .rsub{font-size:17px;color:#2f2453;max-width:560px;margin:16px auto 0;line-height:1.55}
+.life-card .rsub b{color:var(--deep)}
+
+/* ============ partner — deep card ============ */
+#partner{padding:20px 16px}
+.partner-card{position:relative;background:var(--deep);border-radius:54px;color:#fff;text-align:center;padding:clamp(56px,7vw,90px) 24px clamp(120px,14vw,180px);max-width:1408px;margin:0 auto;overflow:hidden}
+.partner-card h2{color:#fff;position:relative;z-index:2}
+.partner-card .kick{color:var(--dtx3);position:relative;z-index:2}
+.partner-card .x{position:relative;z-index:2;font-family:var(--head);font-weight:800;font-size:clamp(64px,10vw,120px);letter-spacing:-4px;line-height:1;color:var(--lime)}
+.partner-card .rsub{position:relative;z-index:2;font-size:17px;color:var(--dtx2);max-width:620px;margin:16px auto 26px;line-height:1.6}
+.partner-card .rsub b{color:#fff}
+.ref-chips{position:relative;z-index:2;display:flex;justify-content:center;flex-wrap:wrap;gap:10px}
+.ref-chips span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);border-radius:100px;padding:9px 18px;font-size:13.5px;font-weight:500;color:#fff}
+.ref-ex{position:relative;z-index:2;display:inline-block;margin-top:24px;background:rgba(190,255,83,.12);color:var(--lime);border-radius:14px;padding:13px 22px;font-size:14px}
+.ref-ex b{color:var(--lime)}
+.pshot{position:relative;z-index:2;max-width:820px;margin:34px auto 0;background:#141416;border-radius:20px;padding:12px;box-shadow:0 30px 80px rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.08)}
+.pshot img{display:block;width:100%;border-radius:12px}
+.pshot .cap{font-size:12.5px;color:var(--dtx3);padding:10px 6px 2px;text-align:left}
+
+/* ============ rules ============ */
+.rules3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:left}
+.rcol{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px 22px}
+.rcol h3{font-size:16.5px;letter-spacing:-.3px;margin-bottom:10px;display:flex;align-items:center;gap:9px}
+.rcol h3 .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.rcol.ok h3 .dot{background:var(--lime)}.rcol.no h3 .dot{background:#e05252}.rcol.tech h3 .dot{background:var(--lav)}
+.rcol ul{list-style:none;margin:0;padding:0}
+.rcol li{display:flex;gap:9px;align-items:flex-start;font-size:13.5px;line-height:1.45;color:var(--tx2);padding:7px 0;border-bottom:1px dashed var(--line2)}
+.rcol li:last-child{border-bottom:none;padding-bottom:0}
+.rcol li i{flex-shrink:0;font-size:15px;margin-top:2px}
+.rcol.ok li i{color:var(--limeD)}.rcol.no li i{color:#d64545}.rcol.tech li i{color:var(--tx3)}
+.rcol.pay{margin-top:16px;text-align:left}
+.rcol.pay h3 .dot{background:var(--lime)}
+.rcol.pay ul{display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+.rcol.pay li i{color:var(--limeD)}
+.rcol.pay li b{color:var(--tx);font-weight:600}
+.rcol.pay li:nth-last-child(2){border-bottom:none;padding-bottom:0}
+.rules-foot{font-size:13px;color:var(--tx3);margin:22px auto 0;line-height:1.75;max-width:620px}
+/* ============ ways — три способа ============ */
+#ways{background:var(--card)}
+.ways{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:left}
+.way{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px 26px;display:flex;flex-direction:column;gap:12px}
+.way .n{width:44px;height:44px;border-radius:50%;background:var(--lime);color:var(--dark);font-family:var(--head);font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center}
+.way h3{font-size:19px;letter-spacing:-.4px;margin-top:4px}
+.way .key{font-family:var(--head);font-weight:800;font-size:15px;color:var(--limeD)}
+.way p{font-size:14.5px;color:var(--tx2);line-height:1.55;margin:0}
+.way p b{color:var(--tx);font-weight:600}
+.rules-foot b{display:block;color:var(--tx);font-size:14px;margin-bottom:4px}
+
+/* ============ trust ============ */
+#trust{background:var(--card)}
+.tfacts{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:left;margin-bottom:16px}
+.tf{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px 22px}
+.tf .big{font-family:var(--head);font-weight:800;font-size:clamp(20px,2.2vw,27px);letter-spacing:-1px;color:var(--deep)}
+.tf .big i{font-size:.8em}
+.tf p{font-size:13.5px;color:var(--tx2);line-height:1.5;margin:10px 0 0}
+.tf a{border-bottom:1px solid var(--line2)}
+.tf a:hover{color:var(--tx);border-color:var(--tx)}
+.rgal{position:relative}
+.crow,.rrow{-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);padding-left:4px;padding-right:4px}
+.cgal .vnav,.rgal .vnav{opacity:.9}
+.rrow{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:4px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.rrow::-webkit-scrollbar{display:none}
+.rcard{flex:0 0 272px;scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;text-align:left;display:flex;flex-direction:column;gap:10px}
+.rcard .rh{display:flex;align-items:center;gap:10px}
+.rcard .rh img,.rcard .rh .av{width:38px;height:38px;border-radius:50%;object-fit:cover;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:var(--deep)}
+.rcard .rh .nm{font-weight:700;font-size:13.5px;line-height:1.2}
+.rcard .rh .ro{font-size:11.5px;color:var(--tx3);margin-top:2px}
+.rcard .pill{align-self:flex-start;font-family:var(--head);font-weight:800;font-size:12px;color:var(--dark);background:var(--lime);border-radius:100px;padding:4px 10px}
+.rcard .tq{font-size:13px;color:var(--tx2);line-height:1.5;margin:0}
+.rcard .tq b{color:var(--tx);font-weight:600}
+.tfoot{font-size:11px;color:#b6b3bd;margin-top:26px;line-height:1.5}
+.tsup-line{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center;font-size:13px;color:var(--tx2);margin-bottom:10px}
+.tsup{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 14px;border-radius:100px;background:#fff;border:1px solid var(--line2);color:var(--tx);font-weight:600;font-size:12.5px;text-decoration:none}
+.tsup i{font-size:16px;color:#2AABEE}
+.tsup:hover{border-color:var(--tx3)}
+.cases-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;text-align:left;margin:30px 0 14px}
+.cases-h h3{font-size:19px;letter-spacing:-.4px}
+.cases-h span{font-size:12.5px;color:var(--tx3)}
+.cgal{position:relative;margin-bottom:16px}
+.crow{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:4px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.crow::-webkit-scrollbar{display:none}
+.ccard{flex:0 0 300px;scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;text-align:left}
+.ccard .cv{position:relative;aspect-ratio:4/3;background:#17121c;cursor:pointer;overflow:hidden}
+.ccard .cv img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.ccard .cv:hover img{transform:scale(1.03)}
+.ccard .cv iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:3}
+.ccard .cv.playing .pl,.ccard .cv.playing .du,.ccard .cv.playing img,.ccard .cv.playing .noimg{display:none}
+.ccard .cv .pl{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;background:var(--lime);color:var(--dark);display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 10px 30px rgba(0,0,0,.35);transition:transform .2s}
+.ccard .cv:hover .pl{transform:translate(-50%,-50%) scale(1.06)}
+.ccard .cv .du{position:absolute;right:10px;bottom:10px;font-size:11px;font-weight:700;color:#fff;background:rgba(0,0,0,.6);backdrop-filter:blur(6px);padding:3px 8px;border-radius:100px}
+.ccard .cv .noimg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.35);font-size:44px;background:radial-gradient(circle at 30% 20%,#3a2a4a,#17121c 70%)}
+.ccard .cb{padding:12px 14px 14px}
+.ccard .cb .nm{font-weight:700;font-size:14px}
+.ccard .cb .ro{font-size:12px;color:var(--tx3);margin-top:2px}
+
+/* ============ faq ============ */
+.faq{max-width:760px;margin:34px auto 0;text-align:left}
+.qa{border-bottom:1px solid var(--line)}
+.qa .q{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 4px;font-family:var(--head);font-weight:600;font-size:17px;letter-spacing:-.3px;cursor:pointer}
+.qa .q i{color:var(--tx3);font-size:22px;transition:transform .3s var(--e),color .2s;flex-shrink:0}
+.qa.open .q i{transform:rotate(45deg);color:var(--limeD)}
+.qa .a{max-height:0;overflow:hidden;transition:max-height .35s cubic-bezier(.4,0,.2,1)}
+.qa .a p{font-size:15px;color:var(--tx2);line-height:1.6;margin:0;padding:0 4px 22px}
+
+/* ============ final ============ */
+#join{padding:20px 16px 24px}
+.fcta{position:relative;background:var(--deep);border-radius:54px;text-align:center;padding:clamp(64px,8vw,104px) 24px clamp(120px,14vw,190px);overflow:hidden;max-width:1408px;margin:0 auto}
+.fcta h2{color:#fff;position:relative;z-index:2}
+.fcta .fsub{font-size:17px;color:var(--dtx2);margin:16px auto 36px;max-width:600px;position:relative;z-index:2;line-height:1.6}
+.fcta .fsub b{color:#fff}
+.fcta .btn{position:relative;z-index:2}
+
+/* footer */
+footer{background:var(--deep);padding:118px 0 36px;margin-top:-56px;clip-path:polygon(0 30px,61% 52px,61% 6px,100% 24px,100% 100%,0 100%);color:#fff}
+.foot-grid{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;margin-bottom:34px;text-align:left}
+.foot-grid .col h4{font-family:var(--head);font-weight:600;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--dtx2);margin:0 0 14px}
+.foot-grid .col a{display:block;font-size:14px;color:var(--dtx3);margin-bottom:9px;transition:color .15s}
+.foot-grid .col a.logo{display:flex}
+.foot-grid .col a:hover{color:#fff}
+.foot-grid p{color:var(--dtx3)}
+.foot-note{font-size:11px;color:#6b6178;line-height:1.5;margin-bottom:20px}
+.foot-bot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--dtx3);border-top:1px solid rgba(255,255,255,.12);padding-top:24px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(14px);transition:opacity .5s var(--e),transform .6s var(--e)}
+.rv.in{opacity:1;transform:none}
+.stagger>*{opacity:0;transform:translateY(14px);transition:opacity .5s var(--e),transform .55s var(--e)}
+.stagger.in>*{opacity:1;transform:none}
+.stagger.in>*:nth-child(2){transition-delay:.06s}
+.stagger.in>*:nth-child(3){transition-delay:.12s}
+.stagger.in>*:nth-child(4){transition-delay:.18s}
+
+.mcta{display:none}
+
+@media(max-width:1060px){
+  .navlinks{display:none}
+  .navburger{display:flex;margin-left:auto}
+  #nav .navsp{display:none}
+  .nav-cta-d{display:none}
+  .navmenu.show{display:flex;flex-direction:column;gap:4px;position:fixed;inset:72px 0 auto 0;background:rgba(255,255,255,.98);backdrop-filter:blur(20px);border-bottom:1px solid var(--line2);padding:14px 18px 22px;z-index:55}
+  .navmenu.show a{padding:13px 6px;font-size:16px;border-bottom:1px solid var(--line);color:var(--tx)}
+  .navmenu.show .btn{margin-top:12px;height:54px;justify-content:center;width:100%}
+}
+@media(max-width:960px){
+  .how-grid{grid-template-columns:1fr;gap:40px}
+  .pgrid,.lgrid{grid-template-columns:1fr}
+  .rules3,.ways{grid-template-columns:1fr}
+  .rcol.pay ul{grid-template-columns:1fr}
+  .rcol.pay li:nth-last-child(2){border-bottom:1px dashed var(--line2);padding-bottom:7px}
+  .howrank{grid-template-columns:1fr}
+  .howrank .hr-t{max-width:none}
+  .tfacts{grid-template-columns:1fr 1fr}
+}
+@media(max-width:700px){
+  section{padding:64px 0}
+  .wrap{padding:0 18px}
+  #nav .wrap{gap:12px}
+  .logo img{height:15px}
+  .promo{font-size:12.5px;padding:9px 12px;flex-wrap:wrap}
+  #hero{padding:10px 8px 0}
+  .hero-card{border-radius:30px;padding:44px 18px 0}
+  .hero-card h1{font-size:clamp(30px,8.6vw,38px);letter-spacing:-1.2px}
+  .hbadge{font-size:11.5px;padding:6px 12px}
+  .hero-video{margin-top:36px;border-radius:20px 20px 0 0}
+  .hv-play{width:68px;height:68px;font-size:28px}
+  .hv-cap .nm{font-size:13.5px}
+  .hv-cap .ro{font-size:11.5px}
+  .hv-badge{font-size:11px;padding:5px 10px}
+  .lkcard{padding:18px}
+  .lk-grid{grid-template-columns:1fr}
+  .tfacts{grid-template-columns:1fr}
+  .fcta,.life-card,.partner-card{border-radius:30px}
+  #lifespan,#partner{padding:12px 8px}
+  .life-card,.partner-card{padding-left:16px;padding-right:16px}
+  .btn{width:100%;justify-content:space-between}
+  .btn-sm,.navmenu .btn{width:auto}
+  .hero-card .btn,.fcta .btn{width:auto;justify-content:center;padding:0 10px 0 28px;height:58px!important}
+  .promo-tail{display:none}
+  .hv-cap{left:14px;bottom:14px;right:auto;max-width:calc(100% - 28px);background:rgba(0,0,0,.6);backdrop-filter:blur(6px);border-radius:10px;padding:7px 11px}
+  .hv-cap .nm{font-size:12.5px;line-height:1.3;text-shadow:none}
+  .hv-cap .ro{display:none}
+  .hero-card .hsub{font-size:15.5px;margin:18px auto 28px}
+  .navmenu.show .btn{width:100%}
+  .cases-h{flex-direction:column;align-items:flex-start;gap:4px}
+  .ccard{flex-basis:270px}
+  .lb-list .lr{gap:8px;padding:9px 8px}
+  .lb-list .lr .sb{font-size:11px}
+  .lb-list .lr .sb .vv{display:block}
+  .lb-list .lr .sb .vv::before{content:none}
+  .lb-list .lr .ea{font-size:14px}
+  .mile .th{font-size:13px}
+  .mile .tx .t1{font-size:13.5px}
+  .pcard{padding:24px 18px}
+  .vnav{display:none}
+  footer{clip-path:polygon(0 22px,58% 40px,58% 4px,100% 18px,100% 100%,0 100%);padding-top:96px}
+  .mcta{display:flex;position:fixed;left:14px;right:14px;bottom:14px;z-index:50;opacity:0;transform:translateY(20px);pointer-events:none;transition:opacity .3s,transform .3s}
+  .mcta.show{opacity:1;transform:none;pointer-events:auto}
+  .mcta .btn{width:100%;box-shadow:0 10px 40px rgba(38,25,48,.4);justify-content:space-between}
+}
+@media(prefers-reduced-motion:reduce){
+  .rv,.stagger>*{transition:none!important;opacity:1!important;transform:none!important}
+  .livedot{animation:none}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="cp-bolt-grad" x1="0" y1="0" x2="0" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0A98DD"/><stop offset=".55" stop-color="#B76CE8"/><stop offset="1" stop-color="#F8418F"/>
+    </linearGradient>
+    <g id="cp-bolts">
+      <polygon points="70,0 118,0 84,125 132,125 92,220 40,220"/>
+      <polygon points="152,0 188,0 162,125 200,125 158,220 118,220"/>
+      <polygon points="268,0 372,0 320,125 396,125 330,220 226,220"/>
+      <polygon points="490,0 634,0 560,125 664,125 580,220 420,220"/>
+      <polygon points="760,0 964,0 862,125 1000,125 894,220 664,220"/>
+      <polygon points="1096,0 1372,0 1234,125 1418,125 1290,220 986,220"/>
+    </g>
+  </defs>
+</svg>
+
+<!-- NAV -->
+<nav id="nav"><div class="wrap">
+  <a class="logo" href="https://chatplace.io/ru"><img src="assets/cp-name-black.svg" alt="ChatPlace"><span class="lg-tag">ЛИГА</span></a>
+  <div class="navlinks">
+    <a href="#products">Какие видео снимать</a>
+    <a href="#how">Как это работает</a>
+    <a href="#league">Рейтинги и призы</a>
+    <a href="#partner">Партнёрка</a>
+    <a href="#trust">Доверие</a>
+    <a href="#faq">FAQ</a>
+  </div>
+  <div class="navsp"></div>
+  <button class="navburger" id="burger" aria-label="Меню"><i class="ti ti-menu-2"></i></button>
+  <a class="btn btn-dark btn-sm nav-cta-d" href="#join">Вступить в Лигу<span class="arr"><i class="ti ti-arrow-right"></i></span></a>
+</div>
+<div class="navmenu" id="navmenu">
+  <a href="#products">Какие видео снимать</a>
+  <a href="#how">Как это работает</a>
+  <a href="#league">Рейтинги и призы</a>
+  <a href="#partner">Партнёрка</a>
+  <a href="#trust">Доверие</a>
+  <a href="#faq">FAQ</a>
+  <a class="btn btn-lm" href="#join">Вступить в Лигу<span class="arr"><i class="ti ti-arrow-right"></i></span></a>
+</div></nav>
+
+<!-- PROMO -->
+<a class="promo" href="#league"><span class="pch">ПРИЗОВОЙ ФОНД</span><span><b>$3&nbsp;000</b> в&nbsp;месяц + призы каждую неделю<span class="promo-tail"> — сезон идёт прямо сейчас</span> →</span></a>
+
+<!-- HERO -->
+<header id="hero">
+  <div class="hero-card">
+    <div class="pat"><svg viewBox="0 0 1440 220" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><use href="#cp-bolts" fill="url(#cp-bolt-grad)"/></svg></div>
+    <div class="inner">
+      <div class="hbadge"><i class="ti ti-bolt"></i>Официальная программа от&nbsp;ChatPlace</div>
+      <h1>Мы платим за&nbsp;просмотры<br>ваших&nbsp;Reels</h1>
+      <p class="hsub">Снимайте ролики о&nbsp;ChatPlace — платформе, которой доверяют <b>1&nbsp;000&nbsp;000+ авторов и&nbsp;бизнесов</b>.<br>За&nbsp;каждую 1000&nbsp;просмотров платим <b>от&nbsp;$0.55 до&nbsp;$1.20</b>.</p>
+      <a class="btn btn-lm" href="#join" style="height:64px">Вступить в Лигу<span class="arr"><i class="ti ti-arrow-right"></i></span></a>
+    </div>
+    <div class="hero-video" id="heroVideo">
+      <div class="hv-poster" style="background-image:url('https://i.ytimg.com/vi/-gEpXtGDays/maxresdefault.jpg')">
+        <span class="hv-badge"><i class="ti ti-video"></i>2:36</span>
+        <span class="hv-play"><i class="ti ti-player-play"></i></span>
+        <span class="hv-cap"><span class="nm">Дмитрий Торгов, сооснователь ChatPlace</span><span class="ro">как всё устроено — за две с половиной минуты</span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- LIVE — карточка как в личном кабинете -->
+<section id="live"><div class="wrap center rv">
+  <div class="kick"><span class="sp"></span>Лига в цифрах</div>
+  <h2>Сколько уже заработали&nbsp;креаторы</h2>
+  <p class="sub">Живые данные Лиги — те же, что видит каждый участник в личном кабинете.</p>
+  <div class="lkcard">
+    <div class="lk-top"><span class="t">Заработок за всё время</span><span class="lk-live"><span class="livedot"></span>обновляется в реальном времени</span></div>
+    <div class="lk-grid">
+      <div class="lk-tile"><div class="lbl">Вся лига креаторов</div><div class="lvnum" id="lvMoney"><span class="c">$</span><span id="lvMoneyN">0</span></div><div class="sublbl">заработано</div></div>
+      <div class="lk-tile"><div class="lbl">Вся лига креаторов</div><div class="lvnum" id="lvViews"><span id="lvViewsN">0</span></div><div class="sublbl">просмотров</div></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- PRODUCTS -->
+<section id="products" style="padding-top:0"><div class="wrap center">
+  <div class="kick"><span class="sp"></span>О чём снимать</div>
+  <h2>Какие видео&nbsp;снимать?</h2>
+  <p class="sub">О разных функциях двух продуктов.<br>Выбирайте любую — и&nbsp;показывайте её в&nbsp;деле.</p>
+  <div class="pgrid stagger rv">
+    <div class="pcard cp">
+      <div class="ph"><span class="ic"><i class="ti ti-message-chatbot"></i></span><div><h3>ChatPlace</h3><div class="tagl">автоматизация Instagram и&nbsp;Telegram</div></div></div>
+      <ul>
+        <li><i class="ti ti-check"></i>Чат-боты и автоматизации: бот на кодовое слово, автоответы, воронки</li>
+        <li><i class="ti ti-check"></i>ИИ-менеджер — сам отвечает на сообщения в директе и комментарии</li>
+        <li><i class="ti ti-check"></i>Рассылки, геймификация, рефералки и проверка подписки</li>
+        <li><i class="ti ti-check"></i>CRM, чаты, контакты и аналитика — всё в одном кабинете</li>
+      </ul>
+      <div class="stat">1 000 000+ <span class="gray">авторов и брендов</span><span class="meta-chip"><i class="ti ti-circle-check"></i>Meta Business Partner*</span></div>
+      <div class="vgal">
+        <div class="vrow" data-reels="mardan,agent,t6,liza,t4,chebanova,maley,r3735d"></div>
+        <button class="vnav prev hide" type="button" aria-label="Назад"><i class="ti ti-chevron-left"></i></button>
+        <button class="vnav next" type="button" aria-label="Вперёд"><i class="ti ti-chevron-right"></i></button>
+      </div>
+      <div class="vnote">Ролики участников Лиги о ChatPlace. Нажмите на ролик, чтобы включить звук.</div>
+    </div>
+    <div class="pcard vr">
+      <div class="ph"><span class="ic"><i class="ti ti-sparkles"></i></span><div><h3>Virale</h3><div class="tagl" style="color:#8b8a94">ИИ-креатор внутри вашего Instagram</div></div></div>
+      <ul>
+        <li><i class="ti ti-check"></i>Видит тренды вашей ниши и разбирает любой виральный ролик по ссылке</li>
+        <li><i class="ti ti-check"></i>Пишет идеи и сценарии под ваш аккаунт</li>
+        <li><i class="ti ti-check"></i>Делает карусели, посты и ИИ-фотосессии</li>
+        <li><i class="ti ti-check"></i>Видеостудия: готовый Reels — от сценария до монтажа и озвучки</li>
+      </ul>
+      <div class="stat" style="color:var(--yellow)">Официальная интеграция <span class="gray">с Instagram</span></div>
+      <div class="vgal">
+        <div class="vrow" data-reels="t5,sergi,r3652,r3579b,r3579e,r3644a,r3735c"></div>
+        <button class="vnav prev hide" type="button" aria-label="Назад"><i class="ti ti-chevron-left"></i></button>
+        <button class="vnav next" type="button" aria-label="Вперёд"><i class="ti ti-chevron-right"></i></button>
+      </div>
+      <div class="vnote">Ролики участников Лиги о Virale — листайте. Нажмите на ролик, чтобы включить звук.</div>
+    </div>
+  </div>
+</div></section>
+
+<!-- HOW -->
+<section id="how"><div class="wrap">
+  <div class="center"><div class="kick"><span class="sp"></span>Как это работает</div>
+  <h2>От ролика до&nbsp;денег — 4&nbsp;шага</h2></div>
+  <div class="how-grid">
+    <div class="shots rv">
+      <div class="shotc"><img src="assets/lk-sidebar.png" alt="Раздел «Лига креаторов» в личном кабинете"><div class="cap"><b>Шаг 2.</b> Раздел «Лига креаторов» — в меню личного кабинета</div></div>
+      <div class="shotc"><img src="assets/lk-earnings.png" alt="Заработок Лиги в личном кабинете"><div class="cap"><b>Шаг 4.</b> Заработок всей Лиги и ваш — на главном экране раздела</div></div>
+    </div>
+    <div class="hsteps">
+      <div class="hstep"><div class="n">1</div><div><h3>Снимите ролик от&nbsp;25&nbsp;секунд</h3><p>О любой функции ChatPlace или Virale: туториал, реакция, скетч. Подойдёт Reels, а ещё YouTube Shorts, TikTok, пост или карусель.</p></div></div>
+      <div class="hstep"><div class="n">2</div><div><h3>Вставьте ссылку в&nbsp;личном кабинете</h3><p>Раздел «Лига креаторов» → «Подать видео». Кабинет сам определит площадку по ссылке.</p></div></div>
+      <div class="hstep"><div class="n">3</div><div><h3>ИИ проверит ролик</h3><p>Проверка занимает минуты. Начисления стартуют, когда ролик набирает <b>3&nbsp;000 просмотров и не менее 0,5% репостов</b>, дальше всё считается автоматически: <b>(просмотры / 1000) × ставка × множитель виральности</b>.</p></div></div>
+      <div class="hstep"><div class="n">4</div><div><h3>Деньги приходят на&nbsp;баланс</h3><p>Начисления — с первого ролика. Вывод открывается после <b>5 уровней</b> (быстрая верификация, пройти можно хоть за день) и доступен <b>от&nbsp;$100</b> — начисления с нескольких роликов можно объединить в один вывод. Вместе с выводом открываются комьюнити и база знаний.</p></div></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- LEAGUE -->
+<section id="league"><div class="wrap center">
+  <div class="kick"><span class="sp"></span>Рейтинги и призы</div>
+  <h2>Два рейтинга. Призы каждую&nbsp;неделю</h2>
+  <p class="sub">Выплаты за просмотры идут всем и без потолка.<br>А лучшие ролики недели и месяца получают призы сверху — вот рейтинг на 10 октября.</p>
+  <div class="lgrid rv">
+    <div class="lcard">
+      <div class="lc-t"><h3>Топ недели</h3><span class="tag">5–11 октября</span></div>
+      <div class="lc-sub">призы: $130 · $50 · $20 — каждую неделю</div>
+      <div class="lb-list">
+        <div class="lr"><div class="rk m1">1</div><div class="who"><span class="av" data-n="S"></span><div class="tx"><div class="nm">solvane31</div><div class="sb"><b>49.3K баллов</b><span class="vv">328.5K просмотров</span></div></div></div><div class="ea">+$130</div></div>
+        <div class="lr"><div class="rk m2">2</div><div class="who"><span class="av" data-n="U"></span><div class="tx"><div class="nm">uzchef_korea</div><div class="sb"><b>8.6K баллов</b><span class="vv">358.6K просмотров</span></div></div></div><div class="ea">+$50</div></div>
+        <div class="lr"><div class="rk m3">3</div><div class="who"><span class="av" data-n="H"></span><div class="tx"><div class="nm">shohidacem</div><div class="sb"><b>8.5K баллов</b><span class="vv">272.8K просмотров</span></div></div></div><div class="ea">+$20</div></div>
+        <div class="lr"><div class="rk">4</div><div class="who"><span class="av" data-n="K"></span><div class="tx"><div class="nm">karimboy_saburov</div><div class="sb"><b>3.7K баллов</b><span class="vv">154.6K просмотров</span></div></div></div><div class="ea"></div></div>
+        <div class="lr"><div class="rk">5</div><div class="who"><span class="av" data-n="C"></span><div class="tx"><div class="nm">katrinlacosta</div><div class="sb"><b>2.7K баллов</b><span class="vv">33.4K просмотров</span></div></div></div><div class="ea"></div></div>
+      </div>
+      <div class="lc-note"><b>Баллы — не просмотры.</b> У solvane31 просмотров меньше, чем у uzchef_korea, а баллов почти в шесть раз больше: ролик разошёлся репостами и залетел далеко за пределы подписчиков.</div>
+    </div>
+    <div class="lcard">
+      <div class="lc-t"><h3>Топ месяца</h3><span class="tag">1–31 октября</span></div>
+      <div class="lc-sub">призы: $1 000 · $700 · $500 · $450 · $350</div>
+      <div class="lb-list">
+        <div class="lr"><div class="rk m1">1</div><div class="who"><span class="av" data-n="S"></span><div class="tx"><div class="nm">solvane31</div><div class="sb"><b>94.4K баллов</b><span class="vv">539.4K просмотров</span></div></div></div><div class="ea">+$1 000</div></div>
+        <div class="lr"><div class="rk m2">2</div><div class="who"><span class="av" data-n="C"></span><div class="tx"><div class="nm">katrinlacosta</div><div class="sb"><b>28.8K баллов</b><span class="vv">184.8K просмотров</span></div></div></div><div class="ea">+$700</div></div>
+        <div class="lr"><div class="rk m3">3</div><div class="who"><span class="av" data-n="B"></span><div class="tx"><div class="nm">bahrom_ai</div><div class="sb"><b>15K баллов</b><span class="vv">480.8K просмотров</span></div></div></div><div class="ea">+$500</div></div>
+        <div class="lr"><div class="rk">4</div><div class="who"><span class="av" data-n="U"></span><div class="tx"><div class="nm">uzchef_korea</div><div class="sb"><b>8.6K баллов</b><span class="vv">358.6K просмотров</span></div></div></div><div class="ea">+$450</div></div>
+        <div class="lr"><div class="rk">5</div><div class="who"><span class="av" data-n="H"></span><div class="tx"><div class="nm">shohidacem</div><div class="sb"><b>8.5K баллов</b><span class="vv">272.8K просмотров</span></div></div></div><div class="ea">+$350</div></div>
+      </div>
+      <div class="lc-note"><b>Рейтинг открыт каждому.</b> Заходите в профили лидеров, смотрите, какие ролики у них залетели, — и адаптируйте эти приёмы под себя.</div>
+    </div>
+  </div>
+  <div class="lgrid rv" style="margin-top:22px">
+    <div class="lcard" style="grid-column:1/-1">
+      <div class="howrank">
+        <h3 class="hr-t">Как считается место?</h3>
+        <div class="hs"><span class="n">1</span><div>Берём ваш <b>лучший ролик</b>, опубликованный за период</div></div>
+        <div class="hs"><span class="n">2</span><div>Считаем его баллы: <b>просмотры × виральность × репосты × множитель языка</b> — ролики на разных языках оцениваются по-разному</div></div>
+        <div class="hs"><span class="n">3</span><div>Чем больше баллов, тем выше место. <b>Один сильный ролик</b> важнее десяти средних</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="lgrid rv" style="margin-top:22px">
+    <div class="lcard" style="grid-column:1/-1">
+      <div class="miles">
+        <h4>Награды за один ролик — вне рейтингов · порог в просмотрах</h4>
+        <div class="mile"><div class="ic"><i class="ti ti-rosette-discount-check"></i></div><div class="tx"><div class="t1">Неделя тарифа «Креатор»</div><div class="t2">полный доступ к Virale в подарок</div></div><div class="th">10K</div></div>
+        <div class="mile"><div class="ic"><i class="ti ti-sparkles"></i></div><div class="tx"><div class="t1">+10 000 ИИ-кредитов</div><div class="t2">на генерации в Virale</div></div><div class="th">100K</div></div>
+        <div class="mile"><div class="ic"><i class="ti ti-gift"></i></div><div class="tx"><div class="t1">Секретный бокс</div><div class="t2">узнаете, когда откроете</div></div><div class="th">500K</div></div>
+        <div class="mile"><div class="ic"><i class="ti ti-coin"></i></div><div class="tx"><div class="t1">+$300 на баланс</div><div class="t2">за ролик-миллионник</div></div><div class="th">1M</div></div>
+        <div class="mile"><div class="ic"><i class="ti ti-flame"></i></div><div class="tx"><div class="t1">+$500 на баланс</div><div class="t2">за ролик от двух миллионов просмотров</div></div><div class="th">2M</div></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- LIFESPAN — lavender -->
+<section id="lifespan">
+  <div class="life-card">
+    <h2>Сколько живёт&nbsp;ролик?</h2>
+    <div class="x">3&nbsp;месяца</div>
+    <p class="rsub">Ролик монетизируется <b>три месяца с момента публикации</b>: пока он набирает просмотры — он приносит вам доход.</p>
+  </div>
+</section>
+
+<!-- PARTNER — deep card with bolts -->
+<section id="partner">
+  <div class="partner-card">
+    <div class="pat"><svg viewBox="0 0 1440 220" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><use href="#cp-bolts" fill="url(#cp-bolt-grad)"/></svg></div>
+    <div class="kick"><span class="sp" style="background:var(--lime)"></span>Второй источник дохода</div>
+    <h2>Партнёрская программа</h2>
+    <div class="x">20–30%</div>
+    <p class="rsub">Приглашайте клиентов по своей реферальной ссылке — удобнее всего выдавать её прямо в автоворонке по кодовому слову.<br>С каждой оплаты приглашённого вы получаете <b>от&nbsp;20 до&nbsp;30% — 36&nbsp;месяцев подряд</b>.</p>
+    <div class="ref-chips">
+      <span>ссылка — в личном кабинете</span>
+      <span>начисляется автоматически</span>
+      <span>складывается с выплатами за просмотры</span>
+    </div>
+    <div class="ref-ex">10 приглашённых клиентов ≈ <b>9&nbsp;000–13&nbsp;500&nbsp;₽ каждый&nbsp;месяц</b></div>
+    <div class="pshot rv"><img src="assets/lk-partner.png" alt="Кабинет партнёра: 30% в течение 36 месяцев, доступно к выводу, приглашённые клиенты, реферальная ссылка и промокод" loading="lazy"><div class="cap">Кабинет партнёра: процент, баланс к выводу, число приглашённых и ваша ссылка или промокод</div></div>
+  </div>
+</section>
+
+<!-- WAYS — три способа заработка -->
+<section id="ways"><div class="wrap center">
+  <div class="kick"><span class="sp"></span>Итого</div>
+  <h2>Три способа заработать в&nbsp;Лиге</h2>
+  <p class="sub">Все три работают одновременно и складываются на одном балансе.<br>Начать можно с любого.</p>
+  <div class="ways stagger rv">
+    <div class="way"><span class="n">1</span><h3>Выплаты за&nbsp;просмотры</h3><div class="key">от $0.55 до $1.20 за 1000</div><p>Начисления стартуют, как только ролик набирает <b>3&nbsp;000 просмотров и не менее 0,5% репостов</b>, и идут три месяца — пока ролик собирает просмотры.</p></div>
+    <div class="way"><span class="n">2</span><h3>Призовые фонды</h3><div class="key">$3 000 в месяц + призы каждую неделю</div><p>Лучшие ролики недели получают <b>$130 · $50 · $20</b>, лучшие ролики месяца — <b>$1&nbsp;000 · $700 · $500 · $450 · $350</b>. Считается лучший ролик за период, место — по баллам.</p></div>
+    <div class="way"><span class="n">3</span><h3>Партнёрская программа</h3><div class="key">20–30% × 36 месяцев</div><p>Всё, что нужно, — дать свою реферальную ссылку. <b>Остальное сделаем мы:</b> свяжемся с клиентом, ответим на его вопросы и доведём до оплаты. Вы получаете процент с каждого платежа приглашённого.</p></div>
+  </div>
+</div></section>
+
+<!-- RULES -->
+<section id="rules"><div class="wrap center">
+  <div class="kick"><span class="sp"></span>Правила</div>
+  <h2>Все правила. Без мелкого&nbsp;шрифта</h2>
+  <p class="sub">Полный список — сюрпризов после регистрации не будет.</p>
+  <div class="rules3 stagger rv">
+    <div class="rcol ok">
+      <h3><span class="dot"></span>Снимаем</h3>
+      <ul>
+        <li><i class="ti ti-check"></i>Продвижение в Instagram и рост через Reels</li>
+        <li><i class="ti ti-check"></i>Анализ своего аккаунта или конкурентов</li>
+        <li><i class="ti ti-check"></i>Построение личного бренда</li>
+        <li><i class="ti ti-check"></i>Создание постов, сценариев, каруселей и Reels</li>
+        <li><i class="ti ti-check"></i>ИИ для поиска, анализа и создания вирального контента</li>
+        <li><i class="ti ti-check"></i>Ответы и продажи с ИИ в Direct и комментариях</li>
+        <li><i class="ti ti-check"></i>Автоматизации, воронки и чат-боты по кодовому слову</li>
+        <li><i class="ti ti-check"></i>Видео и тренды с ИИ: Seedance, Nano Banana, GPT, Kling и Veo</li>
+      </ul>
+    </div>
+    <div class="rcol no">
+      <h3><span class="dot"></span>Не принимаем</h3>
+      <ul>
+        <li><i class="ti ti-x"></i>Ролики не про продвижение, контент или ИИ — даже если в них мелькает сервис</li>
+        <li><i class="ti ti-x"></i>Ролики без названия сервиса или без понятного способа в него перейти</li>
+        <li><i class="ti ti-x"></i>Ролики без «ChatPlace» или «Virale» в титрах и в интерфейсе на экране</li>
+        <li><i class="ti ti-x"></i>Ролики, где не показано, как сервис выглядит изнутри и какой даёт результат</li>
+        <li><i class="ti ti-x"></i>Ролики, где сервис упомянут вскользь в конце или в списке среди других</li>
+        <li><i class="ti ti-x"></i>Ролики только про Лигу и заработок — без разбора функций ChatPlace или Virale</li>
+      </ul>
+    </div>
+    <div class="rcol tech">
+      <h3><span class="dot"></span>Технические требования</h3>
+      <ul>
+        <li><i class="ti ti-clock"></i>Длительность ролика — от 25 секунд</li>
+        <li><i class="ti ti-calendar"></i>На момент подачи ролику не больше 3 дней</li>
+        <li><i class="ti ti-stack-2"></i>Не больше 5 роликов в сутки</li>
+        <li><i class="ti ti-eye"></i>Название сервиса, сайт и суть показаны в самом видео, а не в описании</li>
+        <li><i class="ti ti-refresh"></i>Свои одобренные ролики можно перезаливать</li>
+        <li><i class="ti ti-user-x"></i>Чужие ролики и их фрагменты нельзя выдавать за свои — даже ролики участников Лиги</li>
+      </ul>
+    </div>
+  </div>
+  <div class="rcol pay rv">
+    <h3><span class="dot"></span>Начисления и вывод</h3>
+    <ul>
+      <li><i class="ti ti-chart-arrows"></i><span>Начисления стартуют, когда ролик набирает <b>3&nbsp;000 просмотров</b> и не менее <b>0,5% репостов</b></span></li>
+      <li><i class="ti ti-star"></i><span>Учитываем качество: смыслы, глубину раскрытия темы, показан ли интерфейс и пошаговая инструкция внутри сервиса</span></li>
+      <li><i class="ti ti-wallet"></i><span>Вывод доступен <b>от&nbsp;$100</b></span></li>
+      <li><i class="ti ti-stack-2"></i><span>Выводы можно объединять — копите начисления с нескольких роликов и выводите одной суммой</span></li>
+    </ul>
+  </div>
+  <div class="rules-foot"><b>И ещё три вещи, которые важно знать</b>Накрутка просмотров — исключение из программы.<br>Права на ролики остаются у вас.<br>Эксклюзива нет: снимайте любой другой контент и участвуйте где угодно.</div>
+</div></section>
+
+<!-- TRUST -->
+<section id="trust"><div class="wrap center">
+  <div class="kick"><span class="sp"></span>Кто платит</div>
+  <h2>Почему нам можно&nbsp;верить</h2>
+  <p class="sub">Лига — официальная программа ChatPlace, а не анонимный «проект».<br>Вот проверяемые факты.</p>
+  <div class="tfacts stagger rv">
+    <div class="tf"><div class="big">1 000 000+</div><p>авторов и брендов доверяют ChatPlace</p></div>
+    <div class="tf"><div class="big">№1 в СНГ</div><p>крупнейший сервис продвижения в Instagram — четвёртый год на рынке</p></div>
+    <div class="tf"><span class="meta-chip"><i class="ti ti-circle-check"></i>Meta Business Partner*</span><p>ChatPlace — официальный партнёр Meta, поэтому использование сервиса безопасно для вашего аккаунта</p></div>
+    <div class="tf"><div class="big">Anthropic <i class="ti ti-arrow-up-right"></i></div><p><a href="https://claude.com/customers/chatplace" target="_blank" rel="noopener">Разработчик Claude пишет о ChatPlace</a> — кейс о том, как устроен наш ИИ</p></div>
+  </div>
+  <div class="cases-h rv"><h3>Кейсы креаторов — записи с эфира</h3><span>участники Лиги рассказывают, как снимали и сколько заработали</span></div>
+  <div class="cgal rv">
+    <div class="crow">
+      <div class="ccard"><div class="cv" data-vimeo="1216806455"><img src="assets/cases/case1.jpg" alt="Кейс 1 — Юлия" loading="lazy"><span class="pl"><i class="ti ti-player-play"></i></span><span class="du">4:09</span></div><div class="cb"><div class="nm">Юлия</div><div class="ro">кейс 1 · участница Лиги</div></div></div>
+      <div class="ccard"><div class="cv" data-vimeo="1216806628"><img src="assets/cases/case2.jpg" alt="Кейс 2 — Khaled Rizaev" loading="lazy"><span class="pl"><i class="ti ti-player-play"></i></span><span class="du">5:01</span></div><div class="cb"><div class="nm">Khaled Rizaev</div><div class="ro">кейс 2 · участник Лиги</div></div></div>
+      <div class="ccard"><div class="cv" data-vimeo="1216806675"><img src="assets/cases/case3.jpg" alt="Кейс 3" loading="lazy"><span class="pl"><i class="ti ti-player-play"></i></span><span class="du">7:36</span></div><div class="cb"><div class="nm">Вика</div><div class="ro">кейс 3 · участница Лиги</div></div></div>
+      <div class="ccard"><div class="cv" data-vimeo="1216806697"><img src="assets/cases/case4.jpg" alt="Кейс 4 — Бегимай Бекбоева" loading="lazy"><span class="pl"><i class="ti ti-player-play"></i></span><span class="du">3:48</span></div><div class="cb"><div class="nm">Бегимай Бекбоева</div><div class="ro">кейс 4 · участница Лиги</div></div></div>
+      <div class="ccard"><div class="cv" data-vimeo="1216806741"><span class="noimg"><i class="ti ti-microphone"></i></span><span class="pl"><i class="ti ti-player-play"></i></span><span class="du">3:02</span></div><div class="cb"><div class="nm">Сергей</div><div class="ro">кейс 5 · участник Лиги</div></div></div>
+    </div>
+    <button class="vnav prev hide" type="button" aria-label="Назад"><i class="ti ti-chevron-left"></i></button>
+    <button class="vnav next" type="button" aria-label="Вперёд"><i class="ti ti-chevron-right"></i></button>
+  </div>
+  <div class="cases-h rv"><h3>Отзывы креаторов и клиентов</h3></div>
+  <div class="rgal rv">
+    <div class="rrow">
+      <div class="rcard"><div class="rh"><img src="assets/avatars/a3.webp" alt="" loading="lazy"><div><div class="nm">Юлия Федина</div><div class="ro">ИИ-фото и нейровидео</div></div></div><span class="pill">100 млн</span><p class="tq">«Секрет моего успеха — ChatPlace. В конце апреля было ~300 подписчиков, сейчас 100 тысяч. А один ролик собрал <b>больше 100 млн просмотров</b>.»</p></div>
+      <div class="rcard"><div class="rh"><img src="assets/avatars/a2.webp" alt="" loading="lazy"><div><div class="nm">Дмитрий Седов</div><div class="ro">блогер</div></div></div><span class="pill">2 млн</span><p class="tq">«В мае карусель залетела на <b>2 млн просмотров</b> — благодаря ChatPlace. С одного поста <b>15 000 подписчиков за 3 дня</b>. Такого у меня ещё не было.»</p></div>
+      <div class="rcard"><div class="rh"><img src="assets/avatars/a4.webp" alt="" loading="lazy"><div><div class="nm">Sergiy Galchenko</div><div class="ro">Kinesio School</div></div></div><span class="pill">1,2 млн</span><p class="tq">«<b>+2800 подписчиков и 1,2 млн просмотров за 48 часов</b>. И это уже вторая залетевшая карусель на Virale 🔥»</p></div>
+      <div class="rcard"><div class="rh"><span class="av" data-n="A"></span><div><div class="nm">Ahmad Nazarov</div><div class="ro">INTER NATION · Узбекистан</div></div></div><span class="pill">3,4 млн</span><p class="tq">«Профиль развил за месяц — <b>3,4 млн просмотров</b>. Отдельное спасибо за мобильную версию: ошибку в публикации исправил прямо с телефона.»</p></div>
+      <div class="rcard"><div class="rh"><img src="assets/avatars/a5.webp" alt="" loading="lazy"><div><div class="nm">Евгений Ищенко</div><div class="ro">биохакинг · ИИ в бизнесе</div></div></div><span class="pill">550К</span><p class="tq">«Карусель сделана на Virale — вышла 6 дней назад, <b>охват уже 550 тысяч</b>.»</p></div>
+      <div class="rcard"><div class="rh"><img src="assets/avatars/a6.webp" alt="" loading="lazy"><div><div class="nm">Натали Борисова</div><div class="ro">маркетолог онлайн-школ</div></div></div><span class="pill">+4000</span><p class="tq">«Год назад подключила ChatPlace — было ~2400 подписчиков. С воронкой на проверку подписки <b>набрала 4000 живых</b> 🔥»</p></div>
+      <div class="rcard"><div class="rh"><img src="assets/avatars/a1.webp" alt="" loading="lazy"><div><div class="nm">Мария Афонина</div><div class="ro">«Мари про запуски» · 80К</div></div></div><span class="pill">190К → 2К ₽</span><p class="tq">«Раньше только рассылки съедали до <b>190 000 ₽/мес</b>. Переехала со всей базой на ChatPlace — <b>безлимит за 2 000 ₽/мес</b>. Так и должен выглядеть современный бизнес.»</p></div>
+      <div class="rcard"><div class="rh"><img src="assets/avatars/a11.webp" alt="" loading="lazy"><div><div class="nm">Алёна Тимкова</div><div class="ro">эксперт</div></div></div><p class="tq">«Попробовала ваши карусели — сказать, что в шоке, ничего не сказать! Главное — <b>Virale делает не по шаблону</b>. Огонь 🔥»</p></div>
+      <div class="rcard"><div class="rh"><img src="assets/avatars/a12.webp" alt="" loading="lazy"><div><div class="nm">Кирилл Зарубин</div><div class="ro">эксперт</div></div></div><p class="tq">«В восторге от сервиса: помогает визуализировать сложные вещи — <b>за 5 минут готово для поста</b>. Огромный респект команде!»</p></div>
+      <div class="rcard"><div class="rh"><img src="assets/avatars/a8.webp" alt="" loading="lazy"><div><div class="nm">Ширак</div><div class="ro">креатор</div></div></div><p class="tq">«Ребята, вы что за монстры?) Подключил Claude к ChatPlace — столько всего уже наделал. Просто бомба 🔥»</p></div>
+      <div class="rcard"><div class="rh"><img src="assets/avatars/a7.webp" alt="" loading="lazy"><div><div class="nm">WhyNot</div><div class="ro">маркетолог</div></div></div><p class="tq">«Claude через API <b>сам собрал мне всю воронку</b> прямо в вашем сервисе. Фантастика — это всё меняет кардинально 🤯»</p></div>
+      <div class="rcard"><div class="rh"><img src="assets/avatars/a9.webp" alt="" loading="lazy"><div><div class="nm">daryahenna</div><div class="ro">блогер</div></div></div><p class="tq">«Огромная благодарность поддержке ChatPlace ❤️ Задала кучу вопросов — и каждый раз отвечают быстро и круто. Топ 🔥»</p></div>
+      <div class="rcard"><div class="rh"><img src="assets/avatars/a10.webp" alt="" loading="lazy"><div><div class="nm">Сергей Макушкин</div><div class="ro">клиент</div></div></div><p class="tq">«Замечательный продукт и замечательная команда. И техподдержка — действительно поддержка.»</p></div>
+    </div>
+    <button class="vnav prev hide" type="button" aria-label="Назад"><i class="ti ti-chevron-left"></i></button>
+    <button class="vnav next" type="button" aria-label="Вперёд"><i class="ti ti-chevron-right"></i></button>
+  </div>
+  <div class="tfoot"><span class="tsup-line">По любым вопросам напишите в техподдержку <a class="tsup" href="https://t.me/ChatPlacesupportbot" target="_blank" rel="noopener"><i class="ti ti-brand-telegram"></i>Написать в поддержку</a></span><br>* Meta Platforms Inc. и Instagram признаны экстремистскими и запрещены на территории Российской Федерации.</div>
+</div></section>
+
+<!-- FAQ -->
+<section id="faq"><div class="wrap center">
+  <div class="kick"><span class="sp"></span>Вопросы</div><h2>Частые вопросы</h2>
+  <div class="faq rv">
+    <div class="qa"><div class="q">В чём подвох? Почему вы платите?<i class="ti ti-plus"></i></div><div class="a"><p>Подвоха нет, есть экономика: 1000 просмотров вашего живого ролика обходятся нам дешевле рекламы и работают лучше, потому что вам верят. Мы тратим рекламный бюджет на креаторов вместо таргета — и ролики продолжают набирать просмотры там, где реклама уже остановилась бы.</p></div></div>
+    <div class="qa"><div class="q">Сколько реально заработаю с маленьким аккаунтом?<i class="ti ti-plus"></i></div><div class="a"><p>Честно: первые ролики при небольшой аудитории — это $5–20 в месяц. Дальше всё зависит от просмотров: ролик на 100K ≈ $95, на 1M ≈ $1 000+. Reels показывают не только подписчикам — и уровни Лиги существуют ровно для того, чтобы ваши ролики набирали больше просмотров.</p></div></div>
+    <div class="qa"><div class="q">Я не пользуюсь ChatPlace. О чём мне снимать?<i class="ti ti-plus"></i></div><div class="a"><p>Зарегистрируйтесь бесплатно и попробуйте Virale: подключите Instagram — ИИ сам предложит идеи и соберёт готовые Reels. Ваш первый ролик может быть ровно об этом: «попробовал ИИ-креатора — вот что вышло». Живая реакция — лучший формат для старта.</p></div></div>
+    <div class="qa"><div class="q">Как считаются просмотры и деньги?<i class="ti ti-plus"></i></div><div class="a"><p>Вы добавляете в личный кабинет ссылку на опубликованный ролик. ИИ проверяет его по правилам и начинает отслеживать. Начисления стартуют, когда ролик набирает 3 000 просмотров и не менее 0,5% репостов, — дальше всё считается автоматически. Формула открыта: (просмотры / 1000) × ставка × множитель. Ставка $0.55–$1.20 зависит от доли репостов, множитель 0.8–1.5 — от того, насколько охват превысил число ваших подписчиков.</p></div></div>
+    <div class="qa"><div class="q">Когда я смогу вывести деньги?<i class="ti ti-plus"></i></div><div class="a"><p>Начисления приходят на баланс с первых просмотров, а ролик продолжает приносить доход три месяца с момента публикации. Вывод открывается после пяти пройденных уровней — это быстрая верификация, её можно пройти хоть за день. Минимальная сумма вывода — $100, начисления с нескольких роликов можно объединить в один вывод.</p></div></div>
+    <div class="qa"><div class="q">Что за уровни и зачем они?<i class="ti ti-plus"></i></div><div class="a"><p>Пять уровней — это пять готовых тем для роликов, по одной на каждую возможность сервиса. На каждом уровне вас ждут короткий урок, сценарий с референсами и проверка ИИ. После пятого уровня открываются вывод средств, банк идей и чат креаторов в Telegram.</p></div></div>
+    <div class="qa"><div class="q">Считаются только Reels?<i class="ti ti-plus"></i></div><div class="a"><p>Нет. Основной формат — Reels, но в Лигу можно добавлять YouTube Shorts и TikTok (ставка — половина от обычной), а также посты и карусели в Instagram. Кабинет сам определит площадку по ссылке.</p></div></div>
+    <div class="qa"><div class="q">Стесняюсь публиковать такое в своём блоге. Что делать?<i class="ti ti-plus"></i></div><div class="a"><p>Есть два выхода. Первый — пробный режим: ролики в нём попадают только новым зрителям из рекомендаций, подписчики их не увидят. Второй — отдельный аккаунт под Лигу: заведите его и добавьте в кабинет — такие аккаунты мы одобряем вручную.</p></div></div>
+  </div>
+</div></section>
+
+<!-- FINAL CTA -->
+<section id="join">
+  <div class="fcta">
+    <div class="pat"><svg viewBox="0 0 1440 220" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><use href="#cp-bolts" fill="url(#cp-bolt-grad)"/></svg></div>
+    <h2>Первый ролик — уже&nbsp;сегодня</h2>
+    <p class="fsub">Регистрация бесплатная → раздел «Лига креаторов» в личном кабинете → ролик о любой функции.<br><b>Начисления придут с первых просмотров.</b></p>
+    <a class="btn btn-lm" href="https://app.chatplace.io" style="height:64px">Открыть личный кабинет<span class="arr"><i class="ti ti-arrow-right"></i></span></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer><div class="wrap">
+  <div class="foot-grid">
+    <div class="col" style="max-width:280px">
+      <a class="logo" href="https://chatplace.io/ru" style="margin-bottom:14px"><img src="assets/cp-name-white.svg" alt="ChatPlace" style="height:17px"><span class="lg-tag">ЛИГА</span></a>
+      <p style="font-size:13.5px;line-height:1.5;margin:0">Снимайте ролики о ChatPlace и Virale — мы платим за просмотры.</p>
+    </div>
+    <div class="col"><h4>Лига</h4><a href="#products">Какие видео снимать</a><a href="#how">Как это работает</a><a href="#league">Рейтинги и призы</a><a href="#partner">Партнёрка</a></div>
+    <div class="col"><h4>Продукты</h4><a href="https://chatplace.io/virale/">Virale</a><a href="https://chatplace.io">ChatPlace</a><a href="#faq">FAQ</a></div>
+    <div class="col"><h4>Документы</h4><a href="#">Условия участия</a><a href="#">Политика выплат</a><a href="#">Конфиденциальность</a></div>
+  </div>
+  <div class="foot-note">* Meta Platforms Inc. и Instagram признаны экстремистскими и запрещены на территории Российской Федерации. Счётчики Лиги на странице показывают динамику на основе данных кабинета; точные суммы — в личном кабинете.</div>
+  <div class="foot-bot"><span>© 2026. ChatPlace®</span><a href="https://t.me/ChatPlacesupportbot" target="_blank" rel="noopener" style="color:inherit;text-decoration:none"><i class="ti ti-brand-telegram"></i> Техподдержка</a></div>
+</div></footer>
+
+<!-- STICKY MOBILE CTA -->
+<a class="btn btn-lm mcta" id="mcta" href="#join">Вступить в Лигу<span class="arr"><i class="ti ti-arrow-right"></i></span></a>
+
+<script>
+(function(){
+  var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  function fmt(n){return n.toLocaleString('ru-RU');}
+  function tween(el,from,to,dur){var t0=null;function s(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/dur,1);
+    el.textContent=fmt(Math.round(from+(to-from)*(1-Math.pow(1-p,3))));if(p<1)requestAnimationFrame(s);}requestAnimationFrame(s);}
+
+  // nav
+  var nav=document.getElementById('nav'),burger=document.getElementById('burger'),menu=document.getElementById('navmenu');
+  burger.addEventListener('click',function(){menu.classList.toggle('show');burger.innerHTML=menu.classList.contains('show')?'<i class="ti ti-x"></i>':'<i class="ti ti-menu-2"></i>';});
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('show');burger.innerHTML='<i class="ti ti-menu-2"></i>';});});
+
+  // reveal
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.14});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+
+  // avatar monograms
+  var AVBG=['#BEFF53','#B6A4FF','#63C9FB','#EF66E1'];
+  document.querySelectorAll('.av[data-n]').forEach(function(a){a.textContent=a.dataset.n;a.style.background=AVBG[(a.dataset.n.charCodeAt(0))%4];});
+
+  // hero video — YouTube inline
+  var hv=document.getElementById('heroVideo'),hvStarted=false;
+  hv.addEventListener('click',function(){
+    if(hvStarted)return;hvStarted=true;
+    var f=document.createElement('iframe');
+    f.src='https://www.youtube-nocookie.com/embed/-gEpXtGDays?autoplay=1&rel=0&modestbranding=1';
+    f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;
+    hv.appendChild(f);hv.classList.add('playing');
+  });
+
+  // live counters — база из кабинета Лиги (октябрь 2026), живой прирост
+  var mEl=document.getElementById('lvMoneyN'),vEl=document.getElementById('lvViewsN');
+  var mBox=document.getElementById('lvMoney'),vBox=document.getElementById('lvViews');
+  var money=35099,views=27814520,started=false;
+  function bump(box){box.classList.remove('bump');void box.offsetWidth;box.classList.add('bump');}
+  function tickM(){var inc=Math.floor(Math.random()*3)+1;var from=money;money+=inc;tween(mEl,from,money,300);bump(mBox);setTimeout(tickM,2200+Math.random()*1800);}
+  function tickV(){var inc=Math.floor(Math.random()*900)+250;var from=views;views+=inc;tween(vEl,from,views,500);bump(vBox);setTimeout(tickV,1300+Math.random()*1200);}
+  function startLive(){
+    if(started)return;started=true;
+    if(rm){mEl.textContent=fmt(money);vEl.textContent=fmt(views);return;}
+    tween(mEl,money-1400,money,1400);tween(vEl,views-220000,views,1600);
+    setTimeout(tickM,1800);setTimeout(tickV,2000);
+  }
+  var lio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){startLive();lio.disconnect();}});},{threshold:.3});
+  lio.observe(document.getElementById('live'));
+
+  // reels — автоплей в кадре, клик = звук
+  var allReels=[];
+  function muteReel(w){var v=w.querySelector('video'),s=w.querySelector('.snd i');if(!v||v.muted)return;v.muted=true;v.controls=false;s.className='ti ti-volume-off';}
+  document.querySelectorAll('.vrow[data-reels]').forEach(function(row){
+    row.dataset.reels.split(',').forEach(function(id){
+      var w=document.createElement('div');w.className='vreel';
+      w.innerHTML='<span class="tagv">ролик участника</span><span class="snd"><i class="ti ti-volume-off"></i></span>';
+      var v=document.createElement('video');
+      v.muted=true;v.loop=true;v.playsInline=true;v.setAttribute('playsinline','');v.preload='none';
+      v.poster='assets/reels/'+id+'.jpg';v.src='assets/reels/'+id+'.mp4';
+      w.insertBefore(v,w.firstChild);row.appendChild(w);allReels.push(w);
+      var vio=new IntersectionObserver(function(es){es.forEach(function(e){
+        if(e.isIntersecting){v.play().catch(function(){});}
+        else{v.pause();if(!v.muted)muteReel(w);}
+      });},{threshold:.5});
+      vio.observe(w);
+      w.addEventListener('click',function(){
+        var snd=w.querySelector('.snd i');
+        if(v.muted){allReels.forEach(function(o){if(o!==w)muteReel(o);});v.muted=false;v.controls=true;snd.className='ti ti-volume';}
+        else{v.muted=true;v.controls=false;snd.className='ti ti-volume-off';}
+        v.play().catch(function(){});
+      });
+    });
+  });
+  // горизонтальные ленты (ролики, кейсы): стрелки + край
+  document.querySelectorAll('.vgal,.cgal,.rgal').forEach(function(gal){
+    var row=gal.querySelector('.vrow,.crow,.rrow'),prev=gal.querySelector('.vnav.prev'),next=gal.querySelector('.vnav.next');
+    var loop=!gal.classList.contains('vgal'),half=0,idle=0;
+    if(loop){
+      // зацикливание: дублируем карточки, на стыке половин переставляем scrollLeft без анимации
+      Array.prototype.slice.call(row.children).forEach(function(c){row.appendChild(c.cloneNode(true));});
+      var measure=function(){half=0;var n=row.children.length/2;for(var i=0;i<n;i++){half+=row.children[i].getBoundingClientRect().width;}half+=parseFloat(getComputedStyle(row).columnGap||getComputedStyle(row).gap||0)*n;};
+      measure();window.addEventListener('resize',measure);
+    }
+    function step(){return row.children[0].getBoundingClientRect().width+parseFloat(getComputedStyle(row).columnGap||getComputedStyle(row).gap||0);}
+    function upd(){
+      if(loop){
+        if(row.scrollLeft>=half){row.scrollLeft-=half;}
+        else if(row.scrollLeft<=0&&idle<0){row.scrollLeft+=half;}
+        return;
+      }
+      var max=row.scrollWidth-row.clientWidth-2;
+      prev.classList.toggle('hide',row.scrollLeft<=2);
+      next.classList.toggle('hide',row.scrollLeft>=max);
+      row.classList.toggle('end',row.scrollLeft>=max);
+    }
+    function pauseAuto(){idle=Date.now()+9000;}
+    prev.addEventListener('click',function(){pauseAuto();if(loop&&row.scrollLeft<step()){row.scrollLeft+=half;}row.scrollBy({left:-step(),behavior:'smooth'});});
+    next.addEventListener('click',function(){pauseAuto();row.scrollBy({left:step(),behavior:'smooth'});});
+    row.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd);setTimeout(upd,50);
+    if(loop){
+      prev.classList.remove('hide');
+      ['pointerdown','touchstart','wheel'].forEach(function(ev){row.addEventListener(ev,pauseAuto,{passive:true});});
+      var hover=false;gal.addEventListener('mouseenter',function(){hover=true;});gal.addEventListener('mouseleave',function(){hover=false;});
+      setInterval(function(){
+        var b=gal.getBoundingClientRect(),vis=b.bottom>80&&b.top<innerHeight-40;
+        if(!vis||hover||Date.now()<idle||rm)return;
+        if(row.querySelector('iframe'))return;
+        row.scrollBy({left:step(),behavior:'smooth'});
+      },5000);
+    }
+  });
+  // кейсы с эфира — плеер Vimeo по клику
+  document.querySelectorAll('.cv[data-vimeo]').forEach(function(cv){
+    cv.addEventListener('click',function(){
+      if(cv.querySelector('iframe'))return;
+      document.querySelectorAll('.cv iframe').forEach(function(f){f.remove();});
+      allReels.forEach(muteReel);
+      var f=document.createElement('iframe');
+      f.src='https://player.vimeo.com/video/'+cv.dataset.vimeo+'?autoplay=1&title=0&byline=0&portrait=0&dnt=1';
+      f.allow='autoplay; fullscreen; picture-in-picture';f.setAttribute('allowfullscreen','');
+      document.querySelectorAll('.cv.playing').forEach(function(c){c.classList.remove('playing');});
+      cv.appendChild(f);cv.classList.add('playing');
+    });
+  });
+
+  // faq
+  document.querySelectorAll('.qa').forEach(function(qa){
+    var q=qa.querySelector('.q'),a=qa.querySelector('.a');
+    q.addEventListener('click',function(){
+      var open=qa.classList.contains('open');
+      document.querySelectorAll('.qa.open').forEach(function(o){o.classList.remove('open');o.querySelector('.a').style.maxHeight=null;});
+      if(!open){qa.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';}
+    });
+  });
+
+  // sticky cta + nav shade
+  var mcta=document.getElementById('mcta'),join=document.getElementById('join');
+  window.addEventListener('scroll',function(){
+    var y=window.scrollY;
+    nav.classList.toggle('scrolled',y>10);
+    var nearFoot=join.getBoundingClientRect().top<window.innerHeight+200;
+    mcta.classList.toggle('show',y>700&&!nearFoot);
+  },{passive:true});
+})();
+</script>
+<style>/* editor */
+#ed-bar{position:fixed;right:16px;bottom:16px;z-index:999;display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:14px;background:#fff;color:#0c0c0c;box-shadow:0 14px 44px rgba(0,0,0,.45);font-family:system-ui,-apple-system,sans-serif;font-size:13px}
+#ed-bar[hidden],#ed-hint[hidden]{display:none!important}#ed-bar button{border:0;border-radius:9px;padding:9px 13px;background:#eee;color:#0c0c0c;font-size:13px;font-weight:700;cursor:pointer}#ed-toggle{background:#ffe14a!important}#ed-save{background:#0c0c0c!important;color:#fff!important}#ed-notes.on{background:#fff8c2!important;outline:2px solid #d9b400}#ed-count{opacity:.6;white-space:nowrap}#ed-flash{max-width:0;overflow:hidden;opacity:0;white-space:nowrap;font-size:12px;font-weight:700;transition:.2s}#ed-flash.on{max-width:230px;opacity:1}#ed-flash.ok{color:#1a9d4f}#ed-flash.warn{color:#c8500a}
+#ed-hint{position:fixed;left:16px;bottom:16px;z-index:999;max-width:310px;padding:11px 14px;border-radius:12px;background:rgba(12,12,12,.92);color:#fff;font-family:system-ui,-apple-system,sans-serif;font-size:12.5px;line-height:1.5}#ed-hint b{color:#ffe14a}
+body.ed-on [contenteditable=true]{outline:1.5px dashed rgba(37,211,102,.7);outline-offset:3px;border-radius:4px;cursor:text}body.ed-on [contenteditable=true]:focus{outline:2px solid #ffff5a;background:rgba(255,255,90,.07)}
+@media(max-width:640px){#ed-hint{display:none}#ed-bar{right:8px;bottom:70px;flex-wrap:wrap;max-width:94vw}}
+
+</style>
+<div id="ed-bar" hidden>
+  <button id="ed-toggle">Редактировать текст</button>
+  <button id="ed-notes" hidden>Пояснения</button>
+  <span id="ed-count">0 правок</span>
+  <button id="ed-save">Сохранить</button>
+  <button id="ed-reset">Сбросить</button>
+  <span id="ed-flash"></span>
+</div>
+<div id="ed-hint" hidden>Режим правки текста. Кликни по любому тексту и меняй его на месте. Когда закончишь, нажми <b>«Готово»</b> или <b>«Сохранить»</b>.</div>
+<script src="review-pins.js"></script>
+<script>window.ReviewPins=window.ReviewPins||{init:function(){},items:function(){return[];},count:function(){return 0;},clear:function(){},restore:function(){},goto:function(){}};</script>
+<script>
+(function(){
+  var params=new URLSearchParams(location.search);
+  if(params.has('clean')||location.hash==='#clean')return;
+  var selector='h1,h2,h3,h4,p,li,a,button,summary,.nm,.ro,.pill,.tq';
+  var storageKey='creator-league-dima-edits-v1';
+  var fileName='creator-league-dima-edits-v1.json';
+  var bar=document.getElementById('ed-bar'),hint=document.getElementById('ed-hint');
+  var toggle=document.getElementById('ed-toggle'),save=document.getElementById('ed-save'),reset=document.getElementById('ed-reset'),notes=document.getElementById('ed-notes'),count=document.getElementById('ed-count'),flash=document.getElementById('ed-flash');
+  bar.hidden=false;
+  var elements=[].slice.call(document.querySelectorAll(selector)).filter(function(e){return !e.closest('#ed-bar,#ed-hint')&&!e.querySelector(selector)&&e.textContent.trim()});
+  var store={},touched=false;
+  try{store=JSON.parse(localStorage.getItem(storageKey)||'{}')}catch(error){store={}}
+  function labelFor(element){
+    var section=element.closest('[data-blk]');
+    var block=section?section.getAttribute('data-blk'):(element.closest('header')?'Шапка':'');
+    return (block?block+' · ':'')+(element.getAttribute('data-role')||element.tagName.toLowerCase());
+  }
+  elements.forEach(function(element,index){element.dataset.eid=index;element.dataset.olabel=labelFor(element);element.__orig=element.innerHTML;if(store[index]!=null)element.innerHTML=store[index]});
+  function updateCount(){var total=Object.keys(store).length,comments=ReviewPins.count();count.textContent=total+(total===1?' правка':(total>1&&total<5?' правки':' правок'))+(comments?' · '+comments+(comments===1?' комментарий':' комментария'):'')}
+  function showFlash(message,kind){flash.textContent=message;flash.className='on '+(kind||'');clearTimeout(showFlash.timer);showFlash.timer=setTimeout(function(){flash.className=''},4200)}
+  function output(){return {version:1,page:'Лига креаторов, версия Димы 10.10.2026',source:'campaigns/creator-league-dima-20261010/index.html',edits:Object.keys(store).map(function(index){return {eid:+index,label:elements[index].dataset.olabel,old:(elements[index].__orig||'').trim(),new:(store[index]||'').trim()}}),comments:ReviewPins.items()}}
+  function download(data){var blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),link=document.createElement('a');link.href=URL.createObjectURL(blob);link.download=fileName;document.body.appendChild(link);link.click();link.remove()}
+  function doSave(explicit){var data=output();if(location.hostname!=='127.0.0.1'&&location.hostname!=='localhost'){if(explicit){download(data);showFlash('Файл скачан','warn')}return Promise.resolve()}return fetch('/__save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data,null,2)}).then(function(response){if(!response.ok)throw new Error();showFlash('Сохранено','ok')}).catch(function(){if(explicit){download(data);showFlash('Файл скачан','warn')}})}
+  var editing=false;
+  function setEditing(on){if(on)touched=true;editing=on;document.body.classList.toggle('ed-on',on);hint.hidden=!on;elements.forEach(function(element){if(on){element.setAttribute('contenteditable','true');element.spellcheck=false}else{element.removeAttribute('contenteditable')}});toggle.textContent=on?'Готово':'Редактировать текст'}
+  toggle.onclick=function(){var wasEditing=editing;setEditing(!editing);if(wasEditing)doSave(false)};
+  document.addEventListener('reviewpins:modechange',function(event){if(event.detail&&event.detail.on&&editing){setEditing(false);doSave(false)}});
+  notes.onclick=function(){var on=document.body.classList.toggle('notes-on');notes.classList.toggle('on',on);try{localStorage.setItem(storageKey+'-notes',on?'1':'')}catch(error){}};
+  try{if(localStorage.getItem(storageKey+'-notes')){document.body.classList.add('notes-on');notes.classList.add('on')}}catch(error){}
+  document.addEventListener('input',function(event){if(!editing)return;var element=event.target.closest&&event.target.closest('[data-eid]');if(!element)return;var index=element.dataset.eid;if(element.innerHTML===element.__orig)delete store[index];else store[index]=element.innerHTML;try{localStorage.setItem(storageKey,JSON.stringify(store))}catch(error){}updateCount()});
+  document.addEventListener('click',function(event){if(!editing)return;var target=event.target.closest('a,button,.Question');if(target&&(target.closest('[data-eid]')||target.querySelector('[data-eid]'))){event.preventDefault();event.stopPropagation()}},true);
+  document.addEventListener('paste',function(event){if(!editing)return;var element=event.target.closest&&event.target.closest('[data-eid]');if(!element)return;event.preventDefault();var text=(event.clipboardData||window.clipboardData).getData('text/plain');document.execCommand('insertText',false,text)});
+  save.onclick=function(){doSave(true)};
+  reset.onclick=function(){if(!confirm('Сбросить все правки и вернуть исходный текст?'))return;store={};try{localStorage.removeItem(storageKey)}catch(error){}ReviewPins.clear();elements.forEach(function(element){element.innerHTML=element.__orig});updateCount();doSave(false);showFlash('Правки сброшены','ok')};
+  ReviewPins.init({key:storageKey+'-pins',skip:'.note,.rp-skip,.Proof__arrow,.HowCard__chevron,#ed-bar,#ed-hint,#rp-pop,#rp-layer,#rp-btn,.rp-pin',onChange:function(){touched=true;updateCount();doSave(false)}});
+  updateCount();setEditing(false);
+  if(location.protocol==='http:'||location.protocol==='https:'){
+    fetch('edits.json',{cache:'no-store'}).then(function(response){if(!response.ok)throw new Error();return response.json()}).then(function(data){
+      if(data.version!==1||touched)return;
+      var localEdits=null,localPins=null;
+      try{localEdits=localStorage.getItem(storageKey);localPins=localStorage.getItem(storageKey+'-pins')}catch(error){}
+      if(localEdits===null){
+        (data.edits||[]).forEach(function(edit){var element=elements[edit.eid];if(element&&edit.old===element.__orig.trim()){store[edit.eid]=edit.new;element.innerHTML=edit.new}});
+        try{localStorage.setItem(storageKey,JSON.stringify(store))}catch(error){}
+      }
+      if(localPins===null&&Array.isArray(data.comments))ReviewPins.restore(data.comments);
+      updateCount();
+    }).catch(function(){});
+  }
+})();
+</script>
+
+</body>
+</html>
