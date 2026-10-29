@@ -355,7 +355,7 @@ footer{background:var(--deep);padding:118px 0 36px;margin-top:-56px;clip-path:po
 
 .mcta{display:none}
 
-@media(max-width:1060px){
+@media(max-width:1320px){
   .navlinks{display:none}
   .navburger{display:flex;margin-left:auto}
   #nav .navsp{display:none}
@@ -424,6 +424,24 @@ footer{background:var(--deep);padding:118px 0 36px;margin-top:-56px;clip-path:po
   .rv,.stagger>*{transition:none!important;opacity:1!important;transform:none!important}
   .livedot{animation:none}
 }
+
+/* Review round 1, 29.10.2026 */
+.lb-heading{display:flex;justify-content:flex-end;padding:10px 12px 4px;color:var(--tx3);font-size:12px;font-weight:700}
+.partner-calc{position:relative;z-index:2;max-width:1020px;margin:30px auto 0;padding:32px 34px 24px;border-radius:28px;background:#fff;color:var(--tx);text-align:left}
+.partner-calc h3{font-size:clamp(20px,2.3vw,28px);letter-spacing:-.6px;text-align:center}
+.calc-values{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;margin:34px 0}
+.calc-values output{display:block;font-family:var(--head);font-size:clamp(27px,3vw,42px);font-weight:800;line-height:1.2;letter-spacing:-1px;font-variant-numeric:tabular-nums}
+.calc-values p,.calc-values label{display:block;font-size:16px;color:var(--tx2);line-height:1.4;margin:8px 0 0}
+.calc-range-wrap{padding:8px;border-radius:60px;background:var(--card)}
+#refRegistrations{display:block;width:100%;margin:0;height:44px;border-radius:50px;appearance:none;-webkit-appearance:none;background:linear-gradient(90deg,#009bdc,#5b9eef,#b665ff,#f156c2,#ff2655);cursor:ew-resize}
+#refRegistrations::-webkit-slider-thumb{appearance:none;-webkit-appearance:none;width:44px;height:44px;border-radius:50%;border:0;background:var(--lime) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'%3E%3Cpath d='M5 14h18M10 9l-5 5 5 5M18 9l5 5-5 5' fill='none' stroke='%230c0c0c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center no-repeat;box-shadow:0 2px 8px #0002}
+#refRegistrations::-moz-range-thumb{width:44px;height:44px;border-radius:50%;border:0;background:var(--lime);box-shadow:0 2px 8px #0002}
+.calc-bounds{display:flex;justify-content:space-between;font-size:12px;color:var(--tx3);padding:5px 12px}
+.partner-calc .calc-note{font-size:12px;line-height:1.5;color:var(--tx3);margin:14px 0 0;max-width:740px}
+.qa .q{width:100%;background:none;text-align:left;color:inherit;line-height:1.45}
+.qa .a ul{padding:0 4px 22px 24px;margin:0;color:var(--tx2);font-size:15px;line-height:1.6}
+.qa .a li+li{margin-top:10px}
+@media(max-width:640px){.partner-calc{padding:24px 18px;border-radius:20px}.calc-values{grid-template-columns:1fr;gap:24px;margin:26px 0}.calc-values output{font-size:30px}.calc-values p,.calc-values label{font-size:14px}.lb-heading{padding-right:8px}}
 </style>
 </head>
 <body>
@@ -468,17 +486,13 @@ footer{background:var(--deep);padding:118px 0 36px;margin-top:-56px;clip-path:po
   <a class="btn btn-lm" href="#join">Вступить в Лигу<span class="arr"><i class="ti ti-arrow-right"></i></span></a>
 </div></nav>
 
-<!-- PROMO -->
-<a class="promo" href="#league"><span class="pch">ПРИЗОВОЙ ФОНД</span><span><b>$3&nbsp;000</b> в&nbsp;месяц + призы каждую неделю<span class="promo-tail"> — сезон идёт прямо сейчас</span> →</span></a>
-
 <!-- HERO -->
 <header id="hero">
   <div class="hero-card">
     <div class="pat"><svg viewBox="0 0 1440 220" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><use href="#cp-bolts" fill="url(#cp-bolt-grad)"/></svg></div>
     <div class="inner">
-      <div class="hbadge"><i class="ti ti-bolt"></i>Официальная программа от&nbsp;ChatPlace</div>
-      <h1>Мы платим за&nbsp;просмотры<br>ваших&nbsp;Reels</h1>
-      <p class="hsub">Снимайте ролики о&nbsp;ChatPlace — платформе, которой доверяют <b>1&nbsp;000&nbsp;000+ авторов и&nbsp;бизнесов</b>.<br>За&nbsp;каждую 1000&nbsp;просмотров платим <b>от&nbsp;$0.55 до&nbsp;$1.20</b>.</p>
+        <h1>Мы платим за&nbsp;просмотры<br>ваших&nbsp;Reels</h1>
+      <p class="hsub">Снимайте о продвижении с ChatPlace и Virale по проверенным сценариям и при поддержке маркетологов и комьюнити. Неважно, сколько у вас подписчиков.</p>
       <a class="btn btn-lm" href="#join" style="height:64px">Вступить в Лигу<span class="arr"><i class="ti ti-arrow-right"></i></span></a>
     </div>
     <div class="hero-video" id="heroVideo">
@@ -493,33 +507,30 @@ footer{background:var(--deep);padding:118px 0 36px;margin-top:-56px;clip-path:po
 
 <!-- LIVE — карточка как в личном кабинете -->
 <section id="live"><div class="wrap center rv">
-  <div class="kick"><span class="sp"></span>Лига в цифрах</div>
   <h2>Сколько уже заработали&nbsp;креаторы</h2>
-  <p class="sub">Живые данные Лиги — те же, что видит каждый участник в личном кабинете.</p>
+  <p class="sub">Снимок статистики из личного кабинета на 10 октября 2026 года.</p>
   <div class="lkcard">
-    <div class="lk-top"><span class="t">Заработок за всё время</span><span class="lk-live"><span class="livedot"></span>обновляется в реальном времени</span></div>
+    <div class="lk-top"><span class="t">Заработок за всё время</span><span class="lk-live">на 10 октября 2026</span></div>
     <div class="lk-grid">
-      <div class="lk-tile"><div class="lbl">Вся лига креаторов</div><div class="lvnum" id="lvMoney"><span class="c">$</span><span id="lvMoneyN">0</span></div><div class="sublbl">заработано</div></div>
-      <div class="lk-tile"><div class="lbl">Вся лига креаторов</div><div class="lvnum" id="lvViews"><span id="lvViewsN">0</span></div><div class="sublbl">просмотров</div></div>
+      <div class="lk-tile"><div class="lbl">Вся лига креаторов</div><div class="lvnum" id="lvMoney"><span class="c">$</span><span id="lvMoneyN">35 099</span></div><div class="sublbl">заработано</div></div>
+      <div class="lk-tile"><div class="lbl">Вся лига креаторов</div><div class="lvnum" id="lvViews"><span id="lvViewsN">27,8 млн</span></div><div class="sublbl">просмотров</div></div>
     </div>
   </div>
 </div></section>
 
 <!-- PRODUCTS -->
 <section id="products" style="padding-top:0"><div class="wrap center">
-  <div class="kick"><span class="sp"></span>О чём снимать</div>
   <h2>Какие видео&nbsp;снимать?</h2>
-  <p class="sub">О разных функциях двух продуктов.<br>Выбирайте любую — и&nbsp;показывайте её в&nbsp;деле.</p>
+  <p class="sub">О личном опыте продвижения с использованием функций ChatPlace и Virale.<br>Показывайте интерфейс, настройки и результат.</p>
   <div class="pgrid stagger rv">
     <div class="pcard cp">
-      <div class="ph"><span class="ic"><i class="ti ti-message-chatbot"></i></span><div><h3>ChatPlace</h3><div class="tagl">автоматизация Instagram и&nbsp;Telegram</div></div></div>
+      <div class="ph"><span class="ic"><i class="ti ti-message-chatbot"></i></span><div><h3>ChatPlace</h3><div class="tagl">автоматизация Instagram, Telegram и&nbsp;TikTok</div></div></div>
       <ul>
-        <li><i class="ti ti-check"></i>Чат-боты и автоматизации: бот на кодовое слово, автоответы, воронки</li>
-        <li><i class="ti ti-check"></i>ИИ-менеджер — сам отвечает на сообщения в директе и комментарии</li>
-        <li><i class="ti ti-check"></i>Рассылки, геймификация, рефералки и проверка подписки</li>
-        <li><i class="ti ti-check"></i>CRM, чаты, контакты и аналитика — всё в одном кабинете</li>
+        <li><i class="ti ti-check"></i>Чат-боты и автоматизации</li>
+        <li><i class="ti ti-check"></i>ИИ-менеджер в директе и комментариях</li>
+        <li><i class="ti ti-check"></i>Рассылки, геймификация, рефералки</li>
+        <li><i class="ti ti-check"></i>CRM, чаты, контакты и аналитика</li>
       </ul>
-      <div class="stat">1 000 000+ <span class="gray">авторов и брендов</span><span class="meta-chip"><i class="ti ti-circle-check"></i>Meta Business Partner*</span></div>
       <div class="vgal">
         <div class="vrow" data-reels="mardan,agent,t6,liza,t4,chebanova,maley,r3735d"></div>
         <button class="vnav prev hide" type="button" aria-label="Назад"><i class="ti ti-chevron-left"></i></button>
@@ -530,12 +541,11 @@ footer{background:var(--deep);padding:118px 0 36px;margin-top:-56px;clip-path:po
     <div class="pcard vr">
       <div class="ph"><span class="ic"><i class="ti ti-sparkles"></i></span><div><h3>Virale</h3><div class="tagl" style="color:#8b8a94">ИИ-креатор внутри вашего Instagram</div></div></div>
       <ul>
-        <li><i class="ti ti-check"></i>Видит тренды вашей ниши и разбирает любой виральный ролик по ссылке</li>
-        <li><i class="ti ti-check"></i>Пишет идеи и сценарии под ваш аккаунт</li>
-        <li><i class="ti ti-check"></i>Делает карусели, посты и ИИ-фотосессии</li>
-        <li><i class="ti ti-check"></i>Видеостудия: готовый Reels — от сценария до монтажа и озвучки</li>
+        <li><i class="ti ti-check"></i>Поиск трендов и разбор виральных роликов</li>
+        <li><i class="ti ti-check"></i>Идеи и сценарии под ваш аккаунт</li>
+        <li><i class="ti ti-check"></i>Дизайн каруселей, постов и ИИ-фотосессии</li>
+        <li><i class="ti ti-check"></i>Генерация Reels от сценария до монтажа и озвучки</li>
       </ul>
-      <div class="stat" style="color:var(--yellow)">Официальная интеграция <span class="gray">с Instagram</span></div>
       <div class="vgal">
         <div class="vrow" data-reels="t5,sergi,r3652,r3579b,r3579e,r3644a,r3735c"></div>
         <button class="vnav prev hide" type="button" aria-label="Назад"><i class="ti ti-chevron-left"></i></button>
@@ -548,15 +558,14 @@ footer{background:var(--deep);padding:118px 0 36px;margin-top:-56px;clip-path:po
 
 <!-- HOW -->
 <section id="how"><div class="wrap">
-  <div class="center"><div class="kick"><span class="sp"></span>Как это работает</div>
-  <h2>От ролика до&nbsp;денег — 4&nbsp;шага</h2></div>
+  <div class="center"><h2>От ролика до&nbsp;денег — 4&nbsp;шага</h2></div>
   <div class="how-grid">
     <div class="shots rv">
       <div class="shotc"><img src="assets/lk-sidebar.png" alt="Раздел «Лига креаторов» в личном кабинете"><div class="cap"><b>Шаг 2.</b> Раздел «Лига креаторов» — в меню личного кабинета</div></div>
       <div class="shotc"><img src="assets/lk-earnings.png" alt="Заработок Лиги в личном кабинете"><div class="cap"><b>Шаг 4.</b> Заработок всей Лиги и ваш — на главном экране раздела</div></div>
     </div>
     <div class="hsteps">
-      <div class="hstep"><div class="n">1</div><div><h3>Снимите ролик от&nbsp;25&nbsp;секунд</h3><p>О любой функции ChatPlace или Virale: туториал, реакция, скетч. Подойдёт Reels, а ещё YouTube Shorts, TikTok, пост или карусель.</p></div></div>
+      <div class="hstep"><div class="n">1</div><div><h3>Снимите ролик от&nbsp;25&nbsp;секунд</h3><p>Пошагово покажите, как решаете задачу продвижения с ChatPlace или Virale. Подойдёт Reels, а ещё YouTube Shorts, TikTok, пост или карусель.</p></div></div>
       <div class="hstep"><div class="n">2</div><div><h3>Вставьте ссылку в&nbsp;личном кабинете</h3><p>Раздел «Лига креаторов» → «Подать видео». Кабинет сам определит площадку по ссылке.</p></div></div>
       <div class="hstep"><div class="n">3</div><div><h3>ИИ проверит ролик</h3><p>Проверка занимает минуты. Начисления стартуют, когда ролик набирает <b>3&nbsp;000 просмотров и не менее 0,5% репостов</b>, дальше всё считается автоматически: <b>(просмотры / 1000) × ставка × множитель виральности</b>.</p></div></div>
       <div class="hstep"><div class="n">4</div><div><h3>Деньги приходят на&nbsp;баланс</h3><p>Начисления — с первого ролика. Вывод открывается после <b>5 уровней</b> (быстрая верификация, пройти можно хоть за день) и доступен <b>от&nbsp;$100</b> — начисления с нескольких роликов можно объединить в один вывод. Вместе с выводом открываются комьюнити и база знаний.</p></div></div>
@@ -567,12 +576,12 @@ footer{background:var(--deep);padding:118px 0 36px;margin-top:-56px;clip-path:po
 <!-- LEAGUE -->
 <section id="league"><div class="wrap center">
   <div class="kick"><span class="sp"></span>Рейтинги и призы</div>
-  <h2>Два рейтинга. Призы каждую&nbsp;неделю</h2>
-  <p class="sub">Выплаты за просмотры идут всем и без потолка.<br>А лучшие ролики недели и месяца получают призы сверху — вот рейтинг на 10 октября.</p>
+  <h2>Дополнительные бонусы<br>за виральность</h2>
+  <p class="sub">Неважно, сколько у вас подписчиков. Мы оцениваем, как ролик набирает просмотры, репосты и выходит за пределы вашей аудитории.</p>
   <div class="lgrid rv">
     <div class="lcard">
-      <div class="lc-t"><h3>Топ недели</h3><span class="tag">5–11 октября</span></div>
-      <div class="lc-sub">призы: $130 · $50 · $20 — каждую неделю</div>
+      <div class="lc-t"><h3>Топ недели</h3></div>
+      <div class="lb-heading"><span>Бонус</span></div>
       <div class="lb-list">
         <div class="lr"><div class="rk m1">1</div><div class="who"><span class="av" data-n="S"></span><div class="tx"><div class="nm">solvane31</div><div class="sb"><b>49.3K баллов</b><span class="vv">328.5K просмотров</span></div></div></div><div class="ea">+$130</div></div>
         <div class="lr"><div class="rk m2">2</div><div class="who"><span class="av" data-n="U"></span><div class="tx"><div class="nm">uzchef_korea</div><div class="sb"><b>8.6K баллов</b><span class="vv">358.6K просмотров</span></div></div></div><div class="ea">+$50</div></div>
@@ -580,11 +589,10 @@ footer{background:var(--deep);padding:118px 0 36px;margin-top:-56px;clip-path:po
         <div class="lr"><div class="rk">4</div><div class="who"><span class="av" data-n="K"></span><div class="tx"><div class="nm">karimboy_saburov</div><div class="sb"><b>3.7K баллов</b><span class="vv">154.6K просмотров</span></div></div></div><div class="ea"></div></div>
         <div class="lr"><div class="rk">5</div><div class="who"><span class="av" data-n="C"></span><div class="tx"><div class="nm">katrinlacosta</div><div class="sb"><b>2.7K баллов</b><span class="vv">33.4K просмотров</span></div></div></div><div class="ea"></div></div>
       </div>
-      <div class="lc-note"><b>Баллы — не просмотры.</b> У solvane31 просмотров меньше, чем у uzchef_korea, а баллов почти в шесть раз больше: ролик разошёлся репостами и залетел далеко за пределы подписчиков.</div>
     </div>
     <div class="lcard">
-      <div class="lc-t"><h3>Топ месяца</h3><span class="tag">1–31 октября</span></div>
-      <div class="lc-sub">призы: $1 000 · $700 · $500 · $450 · $350</div>
+      <div class="lc-t"><h3>Топ месяца</h3></div>
+      <div class="lb-heading"><span>Бонус</span></div>
       <div class="lb-list">
         <div class="lr"><div class="rk m1">1</div><div class="who"><span class="av" data-n="S"></span><div class="tx"><div class="nm">solvane31</div><div class="sb"><b>94.4K баллов</b><span class="vv">539.4K просмотров</span></div></div></div><div class="ea">+$1 000</div></div>
         <div class="lr"><div class="rk m2">2</div><div class="who"><span class="av" data-n="C"></span><div class="tx"><div class="nm">katrinlacosta</div><div class="sb"><b>28.8K баллов</b><span class="vv">184.8K просмотров</span></div></div></div><div class="ea">+$700</div></div>
@@ -592,7 +600,6 @@ footer{background:var(--deep);padding:118px 0 36px;margin-top:-56px;clip-path:po
         <div class="lr"><div class="rk">4</div><div class="who"><span class="av" data-n="U"></span><div class="tx"><div class="nm">uzchef_korea</div><div class="sb"><b>8.6K баллов</b><span class="vv">358.6K просмотров</span></div></div></div><div class="ea">+$450</div></div>
         <div class="lr"><div class="rk">5</div><div class="who"><span class="av" data-n="H"></span><div class="tx"><div class="nm">shohidacem</div><div class="sb"><b>8.5K баллов</b><span class="vv">272.8K просмотров</span></div></div></div><div class="ea">+$350</div></div>
       </div>
-      <div class="lc-note"><b>Рейтинг открыт каждому.</b> Заходите в профили лидеров, смотрите, какие ролики у них залетели, — и адаптируйте эти приёмы под себя.</div>
     </div>
   </div>
   <div class="lgrid rv" style="margin-top:22px">
@@ -619,98 +626,26 @@ footer{background:var(--deep);padding:118px 0 36px;margin-top:-56px;clip-path:po
   </div>
 </div></section>
 
-<!-- LIFESPAN — lavender -->
-<section id="lifespan">
-  <div class="life-card">
-    <h2>Сколько живёт&nbsp;ролик?</h2>
-    <div class="x">3&nbsp;месяца</div>
-    <p class="rsub">Ролик монетизируется <b>три месяца с момента публикации</b>: пока он набирает просмотры — он приносит вам доход.</p>
-  </div>
-</section>
-
 <!-- PARTNER — deep card with bolts -->
 <section id="partner">
   <div class="partner-card">
     <div class="pat"><svg viewBox="0 0 1440 220" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><use href="#cp-bolts" fill="url(#cp-bolt-grad)"/></svg></div>
     <div class="kick"><span class="sp" style="background:var(--lime)"></span>Второй источник дохода</div>
     <h2>Партнёрская программа</h2>
-    <div class="x">20–30%</div>
-    <p class="rsub">Приглашайте клиентов по своей реферальной ссылке — удобнее всего выдавать её прямо в автоворонке по кодовому слову.<br>С каждой оплаты приглашённого вы получаете <b>от&nbsp;20 до&nbsp;30% — 36&nbsp;месяцев подряд</b>.</p>
-    <div class="ref-chips">
-      <span>ссылка — в личном кабинете</span>
-      <span>начисляется автоматически</span>
-      <span>складывается с выплатами за просмотры</span>
+    <p class="rsub">Получайте до 30% с оплат тех, кто зарегистрируется в ChatPlace по вашей реферальной ссылке или промокоду.</p>
+    <div class="partner-calc" id="partner-calculator">
+      <h3>Рассчитайте реферальный доход</h3>
+      <div class="calc-values" aria-live="polite">
+        <div><output id="refIncome" for="refRegistrations">2 700 000 ₽</output><p>Пример дохода за год</p></div>
+        <div><output id="refCount" for="refRegistrations">500</output><label for="refRegistrations">Регистраций по реферальной ссылке</label></div>
+      </div>
+      <div class="calc-range-wrap"><input id="refRegistrations" type="range" min="100" max="1000" step="50" value="500" aria-label="Количество регистраций по реферальной ссылке" aria-describedby="calcAssumptions"></div>
+      <div class="calc-bounds" aria-hidden="true"><span>100</span><span>1 000</span></div>
+      <p class="calc-note" id="calcAssumptions">Пример при оплате 1 500 ₽ в месяц каждым приглашённым клиентом в течение 12 месяцев и комиссии 30%. Расчёт информационный, фактический доход зависит от оплат клиентов.</p>
     </div>
-    <div class="ref-ex">10 приглашённых клиентов ≈ <b>9&nbsp;000–13&nbsp;500&nbsp;₽ каждый&nbsp;месяц</b></div>
     <div class="pshot rv"><img src="assets/lk-partner.png" alt="Кабинет партнёра: 30% в течение 36 месяцев, доступно к выводу, приглашённые клиенты, реферальная ссылка и промокод" loading="lazy"><div class="cap">Кабинет партнёра: процент, баланс к выводу, число приглашённых и ваша ссылка или промокод</div></div>
   </div>
 </section>
-
-<!-- WAYS — три способа заработка -->
-<section id="ways"><div class="wrap center">
-  <div class="kick"><span class="sp"></span>Итого</div>
-  <h2>Три способа заработать в&nbsp;Лиге</h2>
-  <p class="sub">Все три работают одновременно и складываются на одном балансе.<br>Начать можно с любого.</p>
-  <div class="ways stagger rv">
-    <div class="way"><span class="n">1</span><h3>Выплаты за&nbsp;просмотры</h3><div class="key">от $0.55 до $1.20 за 1000</div><p>Начисления стартуют, как только ролик набирает <b>3&nbsp;000 просмотров и не менее 0,5% репостов</b>, и идут три месяца — пока ролик собирает просмотры.</p></div>
-    <div class="way"><span class="n">2</span><h3>Призовые фонды</h3><div class="key">$3 000 в месяц + призы каждую неделю</div><p>Лучшие ролики недели получают <b>$130 · $50 · $20</b>, лучшие ролики месяца — <b>$1&nbsp;000 · $700 · $500 · $450 · $350</b>. Считается лучший ролик за период, место — по баллам.</p></div>
-    <div class="way"><span class="n">3</span><h3>Партнёрская программа</h3><div class="key">20–30% × 36 месяцев</div><p>Всё, что нужно, — дать свою реферальную ссылку. <b>Остальное сделаем мы:</b> свяжемся с клиентом, ответим на его вопросы и доведём до оплаты. Вы получаете процент с каждого платежа приглашённого.</p></div>
-  </div>
-</div></section>
-
-<!-- RULES -->
-<section id="rules"><div class="wrap center">
-  <div class="kick"><span class="sp"></span>Правила</div>
-  <h2>Все правила. Без мелкого&nbsp;шрифта</h2>
-  <p class="sub">Полный список — сюрпризов после регистрации не будет.</p>
-  <div class="rules3 stagger rv">
-    <div class="rcol ok">
-      <h3><span class="dot"></span>Снимаем</h3>
-      <ul>
-        <li><i class="ti ti-check"></i>Продвижение в Instagram и рост через Reels</li>
-        <li><i class="ti ti-check"></i>Анализ своего аккаунта или конкурентов</li>
-        <li><i class="ti ti-check"></i>Построение личного бренда</li>
-        <li><i class="ti ti-check"></i>Создание постов, сценариев, каруселей и Reels</li>
-        <li><i class="ti ti-check"></i>ИИ для поиска, анализа и создания вирального контента</li>
-        <li><i class="ti ti-check"></i>Ответы и продажи с ИИ в Direct и комментариях</li>
-        <li><i class="ti ti-check"></i>Автоматизации, воронки и чат-боты по кодовому слову</li>
-        <li><i class="ti ti-check"></i>Видео и тренды с ИИ: Seedance, Nano Banana, GPT, Kling и Veo</li>
-      </ul>
-    </div>
-    <div class="rcol no">
-      <h3><span class="dot"></span>Не принимаем</h3>
-      <ul>
-        <li><i class="ti ti-x"></i>Ролики не про продвижение, контент или ИИ — даже если в них мелькает сервис</li>
-        <li><i class="ti ti-x"></i>Ролики без названия сервиса или без понятного способа в него перейти</li>
-        <li><i class="ti ti-x"></i>Ролики без «ChatPlace» или «Virale» в титрах и в интерфейсе на экране</li>
-        <li><i class="ti ti-x"></i>Ролики, где не показано, как сервис выглядит изнутри и какой даёт результат</li>
-        <li><i class="ti ti-x"></i>Ролики, где сервис упомянут вскользь в конце или в списке среди других</li>
-        <li><i class="ti ti-x"></i>Ролики только про Лигу и заработок — без разбора функций ChatPlace или Virale</li>
-      </ul>
-    </div>
-    <div class="rcol tech">
-      <h3><span class="dot"></span>Технические требования</h3>
-      <ul>
-        <li><i class="ti ti-clock"></i>Длительность ролика — от 25 секунд</li>
-        <li><i class="ti ti-calendar"></i>На момент подачи ролику не больше 3 дней</li>
-        <li><i class="ti ti-stack-2"></i>Не больше 5 роликов в сутки</li>
-        <li><i class="ti ti-eye"></i>Название сервиса, сайт и суть показаны в самом видео, а не в описании</li>
-        <li><i class="ti ti-refresh"></i>Свои одобренные ролики можно перезаливать</li>
-        <li><i class="ti ti-user-x"></i>Чужие ролики и их фрагменты нельзя выдавать за свои — даже ролики участников Лиги</li>
-      </ul>
-    </div>
-  </div>
-  <div class="rcol pay rv">
-    <h3><span class="dot"></span>Начисления и вывод</h3>
-    <ul>
-      <li><i class="ti ti-chart-arrows"></i><span>Начисления стартуют, когда ролик набирает <b>3&nbsp;000 просмотров</b> и не менее <b>0,5% репостов</b></span></li>
-      <li><i class="ti ti-star"></i><span>Учитываем качество: смыслы, глубину раскрытия темы, показан ли интерфейс и пошаговая инструкция внутри сервиса</span></li>
-      <li><i class="ti ti-wallet"></i><span>Вывод доступен <b>от&nbsp;$100</b></span></li>
-      <li><i class="ti ti-stack-2"></i><span>Выводы можно объединять — копите начисления с нескольких роликов и выводите одной суммой</span></li>
-    </ul>
-  </div>
-  <div class="rules-foot"><b>И ещё три вещи, которые важно знать</b>Накрутка просмотров — исключение из программы.<br>Права на ролики остаются у вас.<br>Эксклюзива нет: снимайте любой другой контент и участвуйте где угодно.</div>
-</div></section>
 
 <!-- TRUST -->
 <section id="trust"><div class="wrap center">
@@ -762,14 +697,48 @@ footer{background:var(--deep);padding:118px 0 36px;margin-top:-56px;clip-path:po
 <section id="faq"><div class="wrap center">
   <div class="kick"><span class="sp"></span>Вопросы</div><h2>Частые вопросы</h2>
   <div class="faq rv">
-    <div class="qa"><div class="q">В чём подвох? Почему вы платите?<i class="ti ti-plus"></i></div><div class="a"><p>Подвоха нет, есть экономика: 1000 просмотров вашего живого ролика обходятся нам дешевле рекламы и работают лучше, потому что вам верят. Мы тратим рекламный бюджет на креаторов вместо таргета — и ролики продолжают набирать просмотры там, где реклама уже остановилась бы.</p></div></div>
-    <div class="qa"><div class="q">Сколько реально заработаю с маленьким аккаунтом?<i class="ti ti-plus"></i></div><div class="a"><p>Честно: первые ролики при небольшой аудитории — это $5–20 в месяц. Дальше всё зависит от просмотров: ролик на 100K ≈ $95, на 1M ≈ $1 000+. Reels показывают не только подписчикам — и уровни Лиги существуют ровно для того, чтобы ваши ролики набирали больше просмотров.</p></div></div>
-    <div class="qa"><div class="q">Я не пользуюсь ChatPlace. О чём мне снимать?<i class="ti ti-plus"></i></div><div class="a"><p>Зарегистрируйтесь бесплатно и попробуйте Virale: подключите Instagram — ИИ сам предложит идеи и соберёт готовые Reels. Ваш первый ролик может быть ровно об этом: «попробовал ИИ-креатора — вот что вышло». Живая реакция — лучший формат для старта.</p></div></div>
-    <div class="qa"><div class="q">Как считаются просмотры и деньги?<i class="ti ti-plus"></i></div><div class="a"><p>Вы добавляете в личный кабинет ссылку на опубликованный ролик. ИИ проверяет его по правилам и начинает отслеживать. Начисления стартуют, когда ролик набирает 3 000 просмотров и не менее 0,5% репостов, — дальше всё считается автоматически. Формула открыта: (просмотры / 1000) × ставка × множитель. Ставка $0.55–$1.20 зависит от доли репостов, множитель 0.8–1.5 — от того, насколько охват превысил число ваших подписчиков.</p></div></div>
-    <div class="qa"><div class="q">Когда я смогу вывести деньги?<i class="ti ti-plus"></i></div><div class="a"><p>Начисления приходят на баланс с первых просмотров, а ролик продолжает приносить доход три месяца с момента публикации. Вывод открывается после пяти пройденных уровней — это быстрая верификация, её можно пройти хоть за день. Минимальная сумма вывода — $100, начисления с нескольких роликов можно объединить в один вывод.</p></div></div>
-    <div class="qa"><div class="q">Что за уровни и зачем они?<i class="ti ti-plus"></i></div><div class="a"><p>Пять уровней — это пять готовых тем для роликов, по одной на каждую возможность сервиса. На каждом уровне вас ждут короткий урок, сценарий с референсами и проверка ИИ. После пятого уровня открываются вывод средств, банк идей и чат креаторов в Telegram.</p></div></div>
-    <div class="qa"><div class="q">Считаются только Reels?<i class="ti ti-plus"></i></div><div class="a"><p>Нет. Основной формат — Reels, но в Лигу можно добавлять YouTube Shorts и TikTok (ставка — половина от обычной), а также посты и карусели в Instagram. Кабинет сам определит площадку по ссылке.</p></div></div>
-    <div class="qa"><div class="q">Стесняюсь публиковать такое в своём блоге. Что делать?<i class="ti ti-plus"></i></div><div class="a"><p>Есть два выхода. Первый — пробный режим: ролики в нём попадают только новым зрителям из рекомендаций, подписчики их не увидят. Второй — отдельный аккаунт под Лигу: заведите его и добавьте в кабинет — такие аккаунты мы одобряем вручную.</p></div></div>
+    <div class="qa" id="faq-lifespan"><button class="q" type="button" aria-expanded="false"><span class="qtext">Как долго ролик приносит доход?</span><i class="ti ti-plus" aria-hidden="true"></i></button><div class="a"><p>Три месяца с момента публикации. В этот период начисления продолжаются, пока ролик набирает просмотры и соответствует правилам Лиги.</p></div></div>
+    <div class="qa" id="rules"><button class="q" type="button" aria-expanded="false"><span class="qtext">Какие ролики принимаются в Лигу?</span><i class="ti ti-plus" aria-hidden="true"></i></button><div class="a"><p>Ролик должен решать задачу зрителя и содержать подробную пошаговую инструкцию по работе с ChatPlace или Virale. Покажите название сервиса и сайт в титрах, интерфейс, настройки и результат.</p><ul>
+        <li>Продвижение в Instagram и рост через Reels</li>
+        <li>Анализ своего аккаунта или конкурентов</li>
+        <li>Построение личного бренда</li>
+        <li>Создание постов, сценариев, каруселей и Reels</li>
+        <li>ИИ для поиска, анализа и создания вирального контента</li>
+        <li>Ответы и продажи с ИИ в Direct и комментариях</li>
+        <li>Автоматизации, воронки и чат-боты по кодовому слову</li>
+        <li>Видео и тренды с ИИ: Seedance, Nano Banana, GPT, Kling и Veo</li>
+      </ul></div></div>
+    <div class="qa" id="faq-rejected"><button class="q" type="button" aria-expanded="false"><span class="qtext">Какие ролики не проходят модерацию?</span><i class="ti ti-plus" aria-hidden="true"></i></button><div class="a"><ul>
+        <li>Ролики не про продвижение, контент или ИИ — даже если в них мелькает сервис</li>
+        <li>Ролики без названия сервиса или без понятного способа в него перейти</li>
+        <li>Ролики без «ChatPlace» или «Virale» в титрах и в интерфейсе на экране</li>
+        <li>Ролики без подробной демонстрации интерфейса, настроек и результата</li>
+        <li>Ролики, где сервис упомянут вскользь в конце или в списке среди других</li>
+        <li>Ролики только про Лигу и заработок — без разбора функций ChatPlace или Virale</li>
+      </ul></div></div>
+    <div class="qa" id="faq-technical"><button class="q" type="button" aria-expanded="false"><span class="qtext">Какие технические требования к роликам?</span><i class="ti ti-plus" aria-hidden="true"></i></button><div class="a"><ul>
+        <li>Длительность ролика — от 25 секунд</li>
+        <li>На момент подачи ролику не больше 3 дней</li>
+        <li>Не больше 5 роликов в сутки</li>
+        <li>Название сервиса, сайт и принцип работы должны быть показаны в самом видео</li>
+        <li>Свои одобренные ролики можно перезаливать</li>
+        <li>Чужие ролики и их фрагменты нельзя выдавать за свои — даже ролики участников Лиги</li>
+      </ul></div></div>
+    <div class="qa" id="faq-payments"><button class="q" type="button" aria-expanded="false"><span class="qtext">Какие условия начислений и вывода?</span><i class="ti ti-plus" aria-hidden="true"></i></button><div class="a"><ul>
+      <li><span>Начисления стартуют, когда ролик набирает <b>3&nbsp;000 просмотров</b> и не менее <b>0,5% репостов</b></span></li>
+      <li><span>Учитываем качество: смыслы, глубину раскрытия темы, показан ли интерфейс и пошаговая инструкция внутри сервиса</span></li>
+      <li><span>Вывод доступен <b>от&nbsp;$100</b></span></li>
+      <li><span>Выводы можно объединять — копите начисления с нескольких роликов и выводите одной суммой</span></li>
+    </ul></div></div>
+    <div class="qa" id="faq-other-rules"><button class="q" type="button" aria-expanded="false"><span class="qtext">Какие ещё правила нужно соблюдать?</span><i class="ti ti-plus" aria-hidden="true"></i></button><div class="a"><p>Попытки обойти модерацию, накрутки, платное продвижение роликов и чаты активности приводят к блокировке аккаунта.</p><p>Права на ролики остаются у вас. Эксклюзива нет: можно снимать другой контент и участвовать в других программах.</p></div></div>
+    <div class="qa"><button class="q" type="button" aria-expanded="false"><span class="qtext">В чём подвох? Почему вы платите?</span><i class="ti ti-plus" aria-hidden="true"></i></button><div class="a"><p>Подвоха нет, есть экономика: 1000 просмотров вашего живого ролика обходятся нам дешевле рекламы и работают лучше, потому что вам верят. Мы тратим рекламный бюджет на креаторов вместо таргета — и ролики продолжают набирать просмотры там, где реклама уже остановилась бы.</p></div></div>
+    <div class="qa"><button class="q" type="button" aria-expanded="false"><span class="qtext">Сколько реально заработаю с маленьким аккаунтом?</span><i class="ti ti-plus" aria-hidden="true"></i></button><div class="a"><p>Честно: первые ролики при небольшой аудитории — это $5–20 в месяц. Дальше всё зависит от просмотров: ролик на 100K ≈ $95, на 1M ≈ $1 000+. Reels показывают не только подписчикам — и уровни Лиги существуют ровно для того, чтобы ваши ролики набирали больше просмотров.</p></div></div>
+    <div class="qa"><button class="q" type="button" aria-expanded="false"><span class="qtext">Я не пользуюсь ChatPlace. О чём мне снимать?</span><i class="ti ti-plus" aria-hidden="true"></i></button><div class="a"><p>Зарегистрируйтесь бесплатно и попробуйте Virale: подключите Instagram — ИИ сам предложит идеи и соберёт готовые Reels. В первом ролике пошагово покажите создание контента: от настройки до готового результата.</p></div></div>
+    <div class="qa"><button class="q" type="button" aria-expanded="false"><span class="qtext">Как считаются просмотры и деньги?</span><i class="ti ti-plus" aria-hidden="true"></i></button><div class="a"><p>Вы добавляете в личный кабинет ссылку на опубликованный ролик. ИИ проверяет его по правилам и начинает отслеживать. Начисления стартуют, когда ролик набирает 3 000 просмотров и не менее 0,5% репостов, — дальше всё считается автоматически. Формула открыта: (просмотры / 1000) × ставка × множитель. Ставка $0.55–$1.20 зависит от доли репостов, множитель 0.8–1.5 — от того, насколько охват превысил число ваших подписчиков.</p></div></div>
+    <div class="qa"><button class="q" type="button" aria-expanded="false"><span class="qtext">Когда я смогу вывести деньги?</span><i class="ti ti-plus" aria-hidden="true"></i></button><div class="a"><p>Начисления приходят на баланс после выполнения условий Лиги. Вывод открывается после пяти пройденных уровней — это быстрая верификация, её можно пройти хоть за день. Минимальная сумма вывода — $100, начисления с нескольких роликов можно объединить в один вывод.</p></div></div>
+    <div class="qa"><button class="q" type="button" aria-expanded="false"><span class="qtext">Что за уровни и зачем они?</span><i class="ti ti-plus" aria-hidden="true"></i></button><div class="a"><p>Пять уровней — это пять готовых тем для роликов, по одной на каждую возможность сервиса. На каждом уровне вас ждут короткий урок, сценарий с референсами и проверка ИИ. После пятого уровня открываются вывод средств, банк идей и чат креаторов в Telegram.</p></div></div>
+    <div class="qa"><button class="q" type="button" aria-expanded="false"><span class="qtext">Считаются только Reels?</span><i class="ti ti-plus" aria-hidden="true"></i></button><div class="a"><p>Нет. Основной формат — Reels, но в Лигу можно добавлять YouTube Shorts и TikTok (ставка — половина от обычной), а также посты и карусели в Instagram. Кабинет сам определит площадку по ссылке.</p></div></div>
+    <div class="qa"><button class="q" type="button" aria-expanded="false"><span class="qtext">Стесняюсь публиковать такое в своём блоге. Что делать?</span><i class="ti ti-plus" aria-hidden="true"></i></button><div class="a"><p>Есть два выхода. Первый — пробный режим: ролики в нём попадают только новым зрителям из рекомендаций, подписчики их не увидят. Второй — отдельный аккаунт под Лигу: заведите его и добавьте в кабинет — такие аккаунты мы одобряем вручную.</p></div></div>
   </div>
 </div></section>
 
@@ -794,7 +763,7 @@ footer{background:var(--deep);padding:118px 0 36px;margin-top:-56px;clip-path:po
     <div class="col"><h4>Продукты</h4><a href="https://chatplace.io/virale/">Virale</a><a href="https://chatplace.io">ChatPlace</a><a href="#faq">FAQ</a></div>
     <div class="col"><h4>Документы</h4><a href="#">Условия участия</a><a href="#">Политика выплат</a><a href="#">Конфиденциальность</a></div>
   </div>
-  <div class="foot-note">* Meta Platforms Inc. и Instagram признаны экстремистскими и запрещены на территории Российской Федерации. Счётчики Лиги на странице показывают динамику на основе данных кабинета; точные суммы — в личном кабинете.</div>
+  <div class="foot-note">* Meta Platforms Inc. и Instagram признаны экстремистскими и запрещены на территории Российской Федерации. Статистика Лиги показана по снимку личного кабинета на 10 октября 2026 года.</div>
   <div class="foot-bot"><span>© 2026. ChatPlace®</span><a href="https://t.me/ChatPlacesupportbot" target="_blank" rel="noopener" style="color:inherit;text-decoration:none"><i class="ti ti-brand-telegram"></i> Техподдержка</a></div>
 </div></footer>
 
@@ -831,21 +800,17 @@ footer{background:var(--deep);padding:118px 0 36px;margin-top:-56px;clip-path:po
     hv.appendChild(f);hv.classList.add('playing');
   });
 
-  // live counters — база из кабинета Лиги (октябрь 2026), живой прирост
-  var mEl=document.getElementById('lvMoneyN'),vEl=document.getElementById('lvViewsN');
-  var mBox=document.getElementById('lvMoney'),vBox=document.getElementById('lvViews');
-  var money=35099,views=27814520,started=false;
-  function bump(box){box.classList.remove('bump');void box.offsetWidth;box.classList.add('bump');}
-  function tickM(){var inc=Math.floor(Math.random()*3)+1;var from=money;money+=inc;tween(mEl,from,money,300);bump(mBox);setTimeout(tickM,2200+Math.random()*1800);}
-  function tickV(){var inc=Math.floor(Math.random()*900)+250;var from=views;views+=inc;tween(vEl,from,views,500);bump(vBox);setTimeout(tickV,1300+Math.random()*1200);}
-  function startLive(){
-    if(started)return;started=true;
-    if(rm){mEl.textContent=fmt(money);vEl.textContent=fmt(views);return;}
-    tween(mEl,money-1400,money,1400);tween(vEl,views-220000,views,1600);
-    setTimeout(tickM,1800);setTimeout(tickV,2000);
+  // Historical cabinet snapshot; no simulated growth.
+  // Partner calculator: same assumptions as chatplace.io/ru/partners, checked 29.10.2026.
+  var refRange=document.getElementById('refRegistrations');
+  function updatePartnerIncome(){
+    var registrations=Number(refRange.value);
+    document.getElementById('refCount').textContent=fmt(registrations);
+    document.getElementById('refIncome').textContent=fmt(Math.ceil(registrations*15*12*.3)*100)+' ₽';
+    refRange.setAttribute('aria-valuetext',fmt(registrations)+' регистраций');
   }
-  var lio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){startLive();lio.disconnect();}});},{threshold:.3});
-  lio.observe(document.getElementById('live'));
+  refRange.addEventListener('input',updatePartnerIncome);
+  updatePartnerIncome();
 
   // reels — автоплей в кадре, клик = звук
   var allReels=[];
@@ -923,15 +888,20 @@ footer{background:var(--deep);padding:118px 0 36px;margin-top:-56px;clip-path:po
     });
   });
 
-  // faq
-  document.querySelectorAll('.qa').forEach(function(qa){
+  // FAQ
+  document.querySelectorAll('.qa').forEach(function(qa,index){
     var q=qa.querySelector('.q'),a=qa.querySelector('.a');
+    a.id=a.id||'faq-answer-'+index;
+    q.setAttribute('aria-controls',a.id);
     q.addEventListener('click',function(){
       var open=qa.classList.contains('open');
-      document.querySelectorAll('.qa.open').forEach(function(o){o.classList.remove('open');o.querySelector('.a').style.maxHeight=null;});
-      if(!open){qa.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';}
+      document.querySelectorAll('.qa.open').forEach(function(o){o.classList.remove('open');o.querySelector('.q').setAttribute('aria-expanded','false');o.querySelector('.a').style.maxHeight=null;});
+      if(!open){qa.classList.add('open');q.setAttribute('aria-expanded','true');a.style.maxHeight=a.scrollHeight+'px';}
     });
   });
+  function resizeFaq(){document.querySelectorAll('.qa.open .a').forEach(function(a){a.style.maxHeight=a.scrollHeight+'px';});}
+  window.addEventListener('resize',resizeFaq);
+  document.addEventListener('input',resizeFaq);
 
   // sticky cta + nav shade
   var mcta=document.getElementById('mcta'),join=document.getElementById('join');
@@ -966,9 +936,9 @@ body.ed-on [contenteditable=true]{outline:1.5px dashed rgba(37,211,102,.7);outli
 (function(){
   var params=new URLSearchParams(location.search);
   if(params.has('clean')||location.hash==='#clean')return;
-  var selector='h1,h2,h3,h4,p,li,a,button,summary,.nm,.ro,.pill,.tq';
-  var storageKey='creator-league-dima-edits-v1';
-  var fileName='creator-league-dima-edits-v1.json';
+  var selector='h1,h2,h3,h4,p,li,a,button,summary,.nm,.ro,.pill,.tq,.qtext';
+  var storageKey='creator-league-dima-edits-v2-final';
+  var fileName='creator-league-dima-edits-v2.json';
   var bar=document.getElementById('ed-bar'),hint=document.getElementById('ed-hint');
   var toggle=document.getElementById('ed-toggle'),save=document.getElementById('ed-save'),reset=document.getElementById('ed-reset'),notes=document.getElementById('ed-notes'),count=document.getElementById('ed-count'),flash=document.getElementById('ed-flash');
   bar.hidden=false;
@@ -983,8 +953,8 @@ body.ed-on [contenteditable=true]{outline:1.5px dashed rgba(37,211,102,.7);outli
   elements.forEach(function(element,index){element.dataset.eid=index;element.dataset.olabel=labelFor(element);element.__orig=element.innerHTML;if(store[index]!=null)element.innerHTML=store[index]});
   function updateCount(){var total=Object.keys(store).length,comments=ReviewPins.count();count.textContent=total+(total===1?' правка':(total>1&&total<5?' правки':' правок'))+(comments?' · '+comments+(comments===1?' комментарий':' комментария'):'')}
   function showFlash(message,kind){flash.textContent=message;flash.className='on '+(kind||'');clearTimeout(showFlash.timer);showFlash.timer=setTimeout(function(){flash.className=''},4200)}
-  function output(){return {version:1,page:'Лига креаторов, версия Димы 10.10.2026',source:'campaigns/creator-league-dima-20261010/index.html',edits:Object.keys(store).map(function(index){return {eid:+index,label:elements[index].dataset.olabel,old:(elements[index].__orig||'').trim(),new:(store[index]||'').trim()}}),comments:ReviewPins.items()}}
-  function download(data){var blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),link=document.createElement('a');link.href=URL.createObjectURL(blob);link.download=fileName;document.body.appendChild(link);link.click();link.remove()}
+  function output(){return {version:2,page:'Лига креаторов, правки 29.10.2026, версия 2',source:'campaigns/creator-league-dima-20261010/index.html',edits:Object.keys(store).map(function(index){return {eid:+index,label:elements[index].dataset.olabel,old:(elements[index].__orig||'').trim(),new:(store[index]||'').trim()}}),comments:ReviewPins.items()}}
+  function download(data){var blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),link=document.createElement('a');link.href=URL.createObjectURL(blob);link.download=fileName.replace('.json','-'+new Date().toISOString().replace(/[:.]/g,'-')+'.json');document.body.appendChild(link);link.click();link.remove()}
   function doSave(explicit){var data=output();if(location.hostname!=='127.0.0.1'&&location.hostname!=='localhost'){if(explicit){download(data);showFlash('Файл скачан','warn')}return Promise.resolve()}return fetch('/__save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data,null,2)}).then(function(response){if(!response.ok)throw new Error();showFlash('Сохранено','ok')}).catch(function(){if(explicit){download(data);showFlash('Файл скачан','warn')}})}
   var editing=false;
   function setEditing(on){if(on)touched=true;editing=on;document.body.classList.toggle('ed-on',on);hint.hidden=!on;elements.forEach(function(element){if(on){element.setAttribute('contenteditable','true');element.spellcheck=false}else{element.removeAttribute('contenteditable')}});toggle.textContent=on?'Готово':'Редактировать текст'}
@@ -993,15 +963,15 @@ body.ed-on [contenteditable=true]{outline:1.5px dashed rgba(37,211,102,.7);outli
   notes.onclick=function(){var on=document.body.classList.toggle('notes-on');notes.classList.toggle('on',on);try{localStorage.setItem(storageKey+'-notes',on?'1':'')}catch(error){}};
   try{if(localStorage.getItem(storageKey+'-notes')){document.body.classList.add('notes-on');notes.classList.add('on')}}catch(error){}
   document.addEventListener('input',function(event){if(!editing)return;var element=event.target.closest&&event.target.closest('[data-eid]');if(!element)return;var index=element.dataset.eid;if(element.innerHTML===element.__orig)delete store[index];else store[index]=element.innerHTML;try{localStorage.setItem(storageKey,JSON.stringify(store))}catch(error){}updateCount()});
-  document.addEventListener('click',function(event){if(!editing)return;var target=event.target.closest('a,button,.Question');if(target&&(target.closest('[data-eid]')||target.querySelector('[data-eid]'))){event.preventDefault();event.stopPropagation()}},true);
+  document.addEventListener('click',function(event){if(!editing)return;var target=event.target.closest('a,button,.Question,.q');if(target&&(target.closest('[data-eid]')||target.querySelector('[data-eid]'))){event.preventDefault();event.stopPropagation()}},true);
   document.addEventListener('paste',function(event){if(!editing)return;var element=event.target.closest&&event.target.closest('[data-eid]');if(!element)return;event.preventDefault();var text=(event.clipboardData||window.clipboardData).getData('text/plain');document.execCommand('insertText',false,text)});
   save.onclick=function(){doSave(true)};
-  reset.onclick=function(){if(!confirm('Сбросить все правки и вернуть исходный текст?'))return;store={};try{localStorage.removeItem(storageKey)}catch(error){}ReviewPins.clear();elements.forEach(function(element){element.innerHTML=element.__orig});updateCount();doSave(false);showFlash('Правки сброшены','ok')};
+  var resetArmed=false,resetTimer;reset.onclick=function(){if(!resetArmed){resetArmed=true;reset.textContent='Подтвердить сброс';showFlash('Нажмите ещё раз для сброса','warn');resetTimer=setTimeout(function(){resetArmed=false;reset.textContent='Сбросить'},5000);return}clearTimeout(resetTimer);resetArmed=false;reset.textContent='Сбросить';store={};try{localStorage.removeItem(storageKey)}catch(error){}ReviewPins.clear();elements.forEach(function(element){element.innerHTML=element.__orig});updateCount();doSave(false);showFlash('Правки сброшены','ok')};
   ReviewPins.init({key:storageKey+'-pins',skip:'.note,.rp-skip,.Proof__arrow,.HowCard__chevron,#ed-bar,#ed-hint,#rp-pop,#rp-layer,#rp-btn,.rp-pin',onChange:function(){touched=true;updateCount();doSave(false)}});
   updateCount();setEditing(false);
   if(location.protocol==='http:'||location.protocol==='https:'){
     fetch('edits.json',{cache:'no-store'}).then(function(response){if(!response.ok)throw new Error();return response.json()}).then(function(data){
-      if(data.version!==1||touched)return;
+      if(data.version!==2||touched)return;
       var localEdits=null,localPins=null;
       try{localEdits=localStorage.getItem(storageKey);localPins=localStorage.getItem(storageKey+'-pins')}catch(error){}
       if(localEdits===null){
